@@ -1,137 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head style="background-color:#FDF7DF">
-    <link href='http://fonts.googleapis.com/css?family=Bangers|Gudea' rel='stylesheet' type='text/css'>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!--FONT STUFF-->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,100&amp;subset=latin">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
+
+  <!--FAVICON SHIT-->
+<script type"text/javascript">
+	$(function () {
+		$("style[media*='screen']").remove();
+		$("link[href*='favicon']").remove();
+		//fix heading
+		var h1 = $(".firstHeading").text().split("/");
+		$(".firstHeading").text(h1[h1.length-1]);
+		$("tr:odd").addClass("odd");
+	});
+	$('link[rel="shortcut icon"]').attr('href','http://openwetware.org/images/2/29/2014-EchiDNA-WEB-FAVICON.png');
+</script>
+<link rel="icon" type="image/png" href="http://openwetware.org/images/2/29/2014-EchiDNA-WEB-FAVICON.png">
 
 <style type="text/css">
 /**** Base styles ****/
-/*#column-one,*/
+/*#column-one, */
 
 #content {
     font-weight: bold;
 }
-  </head>
 
-<div style="padding: 15px; color: #FDF7DF; background-color: #005C64; width: 650ems">
-  <center>
+#footer, div#sidebar-main, #contentSub, .firstHeading, #siteSub, #jump-to-nav, .printfooter, #p-cactions {
+    display: none;
+}
 
-[[Biomod/2015/UNSW | <font face="Bangers" style="font-size:32px; color:#FDF7DF"> Home </font>]] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[[Biomod/2015/UNSW:Our Project | <font face="Bangers" style="font-size:32px; color:#FDF7DF"> Our Project </font>]] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[[Biomod/2015/UNSW:The Lab Book | <font face="Bangers" style="font-size:32px; color:#FDF7DF"> The Lab Book </font>]] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[[Biomod/2015/UNSW:The Team | <font face="Bangers" style="font-size:32px; color:#FDF7DF"> The Team </font>]] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[[Biomod/2015/UNSW:Our Sponsors | <font face="Bangers" style="font-size:32px; color:#FDF7DF"> Our Sponsors </font>]] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[[Biomod/2015/UNSW:Outreach | <font face="Bangers" style="font-size:32px; color:#FDF7DF"> Outreach </font>]] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[[Biomod/2015/UNSW:Contact Us | <font face="Bangers" style="font-size:32px; color:#FDF7DF"> Contact Us </font>]] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+/*only show edit button - also remove p-cactions from previous style*/
+#ca-nstab-main, #ca-talk, #ca-history, #ca-move, #ca-watch, #ca-link, #p-personal{
+    display: none;
+}
 
-  </center>
-</div><br>
+#ca-edit{
+    display:block;
+}
+/*Make text on edit buttons visible for easier editing*/
+.editButtons, #wpSummary{
+	color: black;
+}
 
-<html>
- <body style="background-color:#FDF7DF">
-
-   <center>
-    <img width="480" height="240" src="https://scontent-sea1-1.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/11949263_10153557029314817_5546906082452976158_n.jpg?oh=165e134472ad61f7863da7d5249002a2&oe=568221CC"/>
-   </center>
-  <p></p>
-
-  <p style="font-family:Gudea;font-size:20px">
-     Hello, and welcome to the BIOMOD wiki page of Team Injectimod from the lab down under! We’re currently working hard on our project, but check back soon for more updates as we go!
-  </p>
-
-  <p style="font-family:Gudea;font-size:20px">
-    What’s BIOMOD? Find out <a href="www.biomod.net">here</a>!
-  </p>
-
-  <p style="color:#ffffff">BREAK UP</p>
-
-  <p style="font-family:Gudea; font-size:28px; font-style:bold"> 
-    WHAT ARE WE DOING?
-  </p>
-  <p style="font-family:Gudea;font-size:20px">
-    We’re investigating one of Nature’s greatest mysteries – self-assembly! How does an organism construct a complex, functional, biological nanomachine on the fly? How does it know where everything goes without a blueprint explaining how part A goes into part B?
-  </p>
-  <p style="font-family:Gudea;font-size:20px">
-    We’re on a mission to find out. And maybe build a vaccine or two along the way. Learn more about our project <a href="http://openwetware.org/wiki/Biomod/2015/UNSW:Our_Project">here</a>!
-  </p>
-  <p style="font-family:Gudea;font-size:20px">
-    Also, check out our crowdfunding video below, which includes a brief summary of what we’re trying to do!
-  </p>
-
-<center>
-  <iframe width="840" height="472.5" src="https://www.youtube.com/embed/dvvD3MqLe1o" frameborder="0" allowfullscreen></iframe>
-</center>
-
-  <p style="color:#ffffff">BREAK UP</p>
-
-  <p style="font-family:Gudea; font-size:28px">
-    WHO ARE WE?
-  </p>
-  <p style="font-family:Gudea; font-size:20px">
-    We’re Team Injectimod, a bunch of wiley undergrads from the University of New South Wales, and based at the Victor Chang Cardiac Research Institute!
-  </p>
-  <p style="font-family:Gudea; font-size:20px">
-    Meet the team <a href="http://openwetware.org/wiki/Biomod/2015/UNSW:The_Team">here</a>!
-  </p>
-
-  <p style="color:#ffffff">BREAK UP</p>
-
-  <p style="font-family:Gudea; font-size:28px">
-    WHEN WE'RE NOT IN THE LAB… (A miracle!)
-  </p>
-  <p style="font-family:Gudea; font-size:20px">
-    Science isn’t just about lab coats and messy benches, and it’s not just standing at a bench for hours following a list of steps on a piece of paper. It’s about innovation. It’s asking questions and searching for answers. Science is exciting! It’s edgy, and new, and constantly evolving! And we want to share that with students everywhere! Hence, our Outreach program was born.
-  </p>
-  <p style="font-family:Gudea; font-size:20px">
-    Find out more about our Outreach project <a href="http://openwetware.org/wiki/Biomod/2015/UNSW:Outreach">here</a>!
-  </p>
-
-  <p style="color:#ffffff">BREAK UP</p>
-
-  <p style="font-family:Gudea; font-size:28px">
-    SUPPORT US!
-  </p>
-  <p style="font-family:Gudea; font-size:20px">
-    Our project is well underway! But we need your help! What we need are the final funds to get us over the line, to finish our project and fly over to America to present it to academics from all around the world.
-  </p>
-  <p style="font-family:Gudea; font-size:20px">
-    Check it out <a href="http://www.pozible.com/project/198811">here</a>!
-  </p>
-
-  <p style="color:#ffffff">BREAK UP</p>
-
-  <p style="font-family:Gudea; font-size:28px">
-    SPECIAL THANKS...
-  </p>
-  <p style="font-family:Gudea; font-size:20px">
-    Our project wouldn’t have been possible without the support of our friends, family, university, and institutions.
-  </p>
-  <p style="font-family:Gudea; font-size:20px">
-    Find out more about our sponsors <a href="http://openwetware.org/wiki/Biomod/2015/UNSW:Our_Sponsors">here</a>!
-  </p>
-
-  <p>
-   <center>
-    <img src="http://www.victorchang.edu.au/wp-content/uploads/2012/03/VCCRI_21year_logo_RGB_large2.jpg"/>
-    <img height="80" weight="40" src="https://www.flagstaffgroup.com.au/wp-content/uploads/2015/04/Trade-Investment-Logo.jpg"/>
-    <img height="150" weight="75" src="http://sms.unsw.edu.au/sites/default/themes/sms/images/embl.jpeg"/>
-   </center>
-  </p>
-  <p>
-   <center>
-    <img height="70" weight="35" src="http://www.redbackracing.unsw.edu.au/sites/default/files/styles/large/public/Screen%20Shot%202014-11-02%20at%203.48.39%20PM.png?itok=4ZjXd6QK"/>
-    <img height="65" weight="32.5" src="https://scontent-sea1-1.xx.fbcdn.net/hphotos-xfl1/v/t1.0-9/11988648_10153557124374817_8184655148592103094_n.jpg?oh=8196d884bd21d30fdb16f3eb3d83ecb4&oe=56824520"/>
-   </center>
-  </p>
-  <p>
-   <center>
-    <img height="120" weight="120" src="http://2015.igem.org/wiki/images/c/cf/BABS_UNSW_Australia_babs.gif"/>
-    <img height="64" weight="32" src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xtf1/v/t1.0-9/11988483_10153557134314817_2849104786473773070_n.jpg?oh=45707e454184196d23706b3f97466f4e&oe=566835D6&__gda__=1449083122_1b89104792538288c727f0276961e21c"/>
-   </center>
-  </p>
-
-  <p>
-    <a style="font-size:10px" href="javascript:edit();">*</a>
-  </p>
- </body>
-</html>
+</style>
