@@ -73,19 +73,19 @@
             <div class="item active">
                 <div class="fill" style="background-image:url(images/home_banner.png);"></div>
                 <div class="carousel-caption">
-                    <h3>Caption 1</h3>
+                    <h3>Welcome</h3>
                 </div>
             </div>
             <div class="item">
                 <div class="fill" style="background-image:url(images/home_banner.png);"></div>
                 <div class="carousel-caption">
-                    <h3>Caption 2</h3>
+                    <h3>Coming soon</h3>
                 </div>
             </div>
             <div class="item">
                 <div class="fill" style="background-image:url('images/home_banner.png');"></div>
                 <div class="carousel-caption">
-                    <h3>Caption 3</h3>
+                    <h3>#Soon</h3>
                 </div>
             </div>
         </div>
@@ -204,6 +204,46 @@
         color: #fbb03b;
     }
     
+    #biomod {
+        opacity: 0.5;
+        filter: alpha(opacity=25);
+    }
+    
+    #biomod:hover {
+        opacity: 1.0;
+        filter: alpha(opacity=100);
+    }
+    
+    #background {
+        opacity: 0.5;
+        filter: alpha(opacity=25);
+    }
+    
+    #background:hover {
+        opacity: 1.0;
+        filter: alpha(opacity=100);
+    }
+    
+    #goal {
+        opacity: 0.5;
+        filter: alpha(opacity=25);
+    }
+    
+    #goal:hover {
+        opacity: 1.0;
+        filter: alpha(opacity=100);
+    }
+    
+    #result {
+        opacity: 0.5;
+        filter: alpha(opacity=25);
+    }
+    
+    #result:hover {
+        opacity: 1.0;
+        filter: alpha(opacity=100);
+    }
+    
 </style>
 
 <!---------------------------------------------------------------CONTENT AND SHIT--------------------------------------------------------------->
@@ -221,7 +261,7 @@
                         <p id="BOXES">We've been working on this project for the BIOMOD competition for the last four months, while juggling our university studies. Check out what we've been up to!</p>
                       </div>
                      <center>
-                       <a href="http://biomod.net"><img style="padding: 20px 0px 0px 50px; width: 242.25px; height: 75px" src="images/what_is_biomod.png"></a> 
+                         <a href="http://biomod.net"><img id="biomod" src="images/what_is_biomod.png" style="padding: 20px 0px 0px 20px;"></a>
                      </center>
 		           </div>
                 </div>
@@ -261,7 +301,7 @@
                    <div id="LINK_BOXES">
 			          <div id="BACKGROUND_CONTAINER"><div style="height: 1px;"></div>
                         <h3 style="padding-bottom: 20px;">The Background</h3>
-                          <img style="height: 70px; width: 288.31px; " src="images/backgroundflagella.png">
+                          <img id="background" style="height: 70px; width: 288.31px; " src="images/backgroundflagella.png">
                           <p style="padding-top: 20px;color: #ffffff">The <span id="yellow">motivation</span> of our project idea, and how our project idea is <span id="yellow">scientifically</span> and <span id="yellow">technologically interesting</span>.</p>
                       </div>
 		           </div>
@@ -270,7 +310,7 @@
                     <div id="LINK_BOXES">
                         <div id="GOALS_CONTAINER"><div style="height: 1px;"></div>
                             <h3>The Goals</h3>
-                              <img style="height: 106.05px; width: 120px; margin-right: 100px" align="right" src="images/thegoalstarget.png">
+                              <img id="goal" style="height: 106.05px; width: 120px; margin-right: 100px" align="right" src="images/thegoalstarget.png">
                             <br>
                             <br>
                             <br>
@@ -283,7 +323,7 @@
 		           <div id="LINK_BOXES">
                         <div id="RESULT_CONTAINER"><div style="height: 1px;"></div>
                             <h3>The Result</h3>
-                              <img style="height: 120px; width: 106.05px; margin-right: 100px" align="right" src="images/resultlabbook.png">
+                              <img id="result" style="height: 120px; width: 106.05px; margin-right: 100px" align="right" src="images/resultlabbook.png">
                             <br>
                             <br>
                             <br>
@@ -298,6 +338,7 @@
     </div>  
 
 <br>
+                    
                     
 <!---------------------------------------------------------------ACTUAL FOOTER------------------------------------------------------------------>
 
