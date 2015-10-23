@@ -26,6 +26,7 @@
 
 <link href="css/bootstrap.css" rel="stylesheet">
 <link href="css/biomod_2015.css" rel="stylesheet">
+<link href="css/modern_business.css" rel="stylesheet">
 
 <!-------------------------------------------------------------ACTUAL HEADER------------------------------------------------------------->
 
@@ -57,11 +58,248 @@
 		$('#home_link').addClass('active');
 	</script>
 
-<!--------------------------------------------------------------------CONTENT AND SHIT---------------------------------------------------------------->
+<!-------------------------------------------------------------CAROUSEL SHIT-------------------------------------------------------------------->
+      <!-- Header Carousel -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url(images/home_banner.png);"></div>
+                <div class="carousel-caption">
+                    <h3>Caption 1</h3>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url(images/home_banner.png);"></div>
+                <div class="carousel-caption">
+                    <h3>Caption 2</h3>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('images/home_banner.png');"></div>
+                <div class="carousel-caption">
+                    <h3>Caption 3</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
       
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
       
+
+<!----------------------------------------------------------------CSS AND SHIT------------------------------------------------------------------>
+
+<style type="text/css">
       
-<!--------------------------------------------------------------ACTUAL FOOTER--------------------------------------------------------------------------->
+    #welcome {
+        background-color:#9d493f;
+        padding: 20px 0px 20px 0px;
+        border-style: solid;
+        border-color: #8c3425;
+        border-width: 20px 0px 20px 0px;
+    }
+
+    #project {
+        background-color:#337d83;
+        padding: 20px 0px 20px 0px;
+        border-style: solid;
+        border-color: #005c64;
+        border-width: 20px 0px 20px 0px;
+    }
+    
+    #WELCOME_BLURB {
+        width: 100px;
+    }
+    
+    #WELCOME_CONTAINER {
+       width: 600px;
+	   margin-left: auto;
+	   margin-right: auto;
+	   display: block; 
+	   vertical-align: right; 
+       text-align: left;   
+	   font-size: 120%;
+       padding: 0px 20px 15px 30px ;
+       border-radius: 20px;
+       background-color: #ffffff;
+    }    
+    
+    #PROJECT_CONTAINER {
+       width: 600px;
+	   margin-left: auto;
+	   margin-right: auto;
+	   display: block; 
+	   vertical-align: right; 
+       text-align: left;   
+	   font-size: 120%;
+       padding: 0px 20px 15px 30px ;
+       border-radius: 20px;
+       background-color: #ffffff;
+    }
+
+    #blue {
+        color: #005c64;
+    }
+    
+    #BACKGROUND_CONTAINER {
+       width: 350px;
+	   margin-left: auto;
+	   margin-right: auto;
+	   display: block; 
+	   vertical-align: right; 
+       text-align: left;   
+	   font-size: 120%;
+       padding: 0px 20px 15px 30px;
+       border-radius: 20px;
+       background-color: #76372f; 
+    }
+    
+    #GOALS_CONTAINER {
+       width: 350px;
+	   margin-left: auto;
+	   margin-right: auto;
+	   display: block; 
+	   vertical-align: right; 
+       text-align: left;   
+	   font-size: 120%;
+       padding: 0px 20px 15px 30px ;
+       border-radius: 20px;
+       background-color: #9d493f;
+    }
+    
+    #RESULT_CONTAINER {
+       width: 350px;
+	   margin-left: auto;
+	   margin-right: auto;
+	   display: block; 
+	   vertical-align: right; 
+       text-align: left;   
+	   font-size: 120%;
+       padding: 0px 20px 20px 30px ;
+       border-radius: 20px;
+       background-color: #b16d65;
+    }
+    
+    #yellow {
+        color: #fbb03b;
+    }
+    
+</style>
+
+<!---------------------------------------------------------------CONTENT AND SHIT--------------------------------------------------------------->
+
+<br>
+    <div id="welcome">
+        <center>
+            <div class="container" style="text-align:center;">
+                <div class="row">
+                <div class="col-md-4">
+                   <div id="WELCOME_BLURB">
+			          <div id="WELCOME_CONTAINER"><div style="height: 23px;"></div>
+                        <p id="BOXES">Hello and welcome to the BIOMOD wiki page of Team Injectimod, from the lab down under!</p>
+                        <p id="BOXES">We're Team Injectimod, a group of seven students from the University of New South Wales, based at the Victor Chang Cardiac Research Institute.</p>
+                        <p id="BOXES">We've been working on this project for the BIOMOD competition for the last four months, while juggling our university studies. Check out what we've been up to!</p>
+                      </div>
+                     <center>
+                       <a href="http://biomod.net"><img style="padding: 20px 0px 0px 50px; width: 242.25px; height: 75px" src="images/what_is_biomod.png"></a> 
+                     </center>
+		           </div>
+                </div>
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+		           <img id="HOME_TIP" style="height: 642x; width: 448px;" src="images/home_ourproject.png">
+                </div>
+                </div>
+             </div>
+        </center>
+    </div>  
+
+<br>
+      
+    <div id="project">
+        <center>
+            <div class="container" style="text-align:center;">
+                <div class="row">
+                <div class="col-md-4">
+                   <div id="PROJECT_BLURB">
+			          <div id="PROJECT_CONTAINER"><div style="height: 23px;"></div>
+                        <p id="BOXES"><span id="blue">Self-assembly</span> in Nature is responsible for the formation of molecular machines that have a remarkable complexity and variety of functions. In Nature, scaffolding allows for precise construction and organisation of supramolecular structures that exist in cellular machinery.</p>
+                          <p id="BOXES">One such machine is the bacterial <span id="blue">Type III secretion system (T3SS)</span>, a molecular syringe which self-assembles from dozens of individual proteins. The tip of this nanomachine facilitates the secretion of effector proteins into eukaryotic cells; these effectors exert several processes that aid bacteria in survival and infection. However, the final structure of the tip and its mechanism of assembly have yet to be fully characterised.</p>
+                          <p id="BOXES">We aim to build a <span id="blue">synthetic DNA scaffold to artificially assembly the tip complex of the T3SS</span>! This will allow for investigation of the thermodynamic and structural aspects of scaffolded self-assembly. Successful assembly of this protein complex will establish a <span id="blue">novel tool for artificially constructing antigenic structures</span>, potentially providing a new platform for studying such structures as well as <span id="blue">vaccine development</span>.</p>
+                      </div>
+        </center>
+    </div>
+
+<br>
+                    
+  <div id="the_links">
+        <center>
+            <div class="container" style="text-align:center;">
+                <div class="row">
+                <div class="col-md-4">
+                   <div id="LINK_BOXES">
+			          <div id="BACKGROUND_CONTAINER"><div style="height: 1px;"></div>
+                        <h3 style="padding-bottom: 20px;">The Background</h3>
+                          <img style="height: 70px; width: 288.31px; " src="images/backgroundflagella.png">
+                          <p style="padding-top: 20px;color: #ffffff">The <span id="yellow">motivation</span> of our project idea, and how our project idea is <span id="yellow">scientifically</span> and <span id="yellow">technologically interesting</span>.</p>
+                      </div>
+		           </div>
+                </div>
+                <div class="col-md-4">
+                    <div id="LINK_BOXES">
+                        <div id="GOALS_CONTAINER"><div style="height: 1px;"></div>
+                            <h3>The Goals</h3>
+                              <img style="height: 106.05px; width: 120px; margin-right: 100px" align="right" src="images/thegoalstarget.png">
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <p style="padding-top: 13px;color: #ffffff">Where we will address the <span id="yellow">specification</span> and <span id="yellow">feasibility</span> of our project. The to-do list.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+		           <div id="LINK_BOXES">
+                        <div id="RESULT_CONTAINER"><div style="height: 1px;"></div>
+                            <h3>The Result</h3>
+                              <img style="height: 120px; width: 106.05px; margin-right: 100px" align="right" src="images/resultlabbook.png">
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <p style="padding-top: 30px; color: #ffffff">Where we show the <span id="yellow">merit</span> of our proposed approaches to meet out goal.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+             </div>
+        </center>
+    </div>  
+
+<br>
+                    
+<!---------------------------------------------------------------ACTUAL FOOTER------------------------------------------------------------------>
 
     <div class="footer">
         <div class="container">
@@ -69,6 +307,5 @@
         <p style="font-size: 80%; font-family: GUDEA, Arial, serif; color: #ffffff;">Contact: <a id="footer_link" href="mailto:BIOMODaustralia@gmail.com">BIOMODaustralia@gmail.com</a> | &copy;2015 Team Injectimod. All rights reserved. This team is supported by the <a id="footer_link" href="http://www.unsw.edu.au">University of New South Wales</a> and <a id="footer_link" href="http://www.victorchang.edu.au">Victor Chang Cardiac Research Institute</a>
         </div>
     </div>
-      
 
 </html>

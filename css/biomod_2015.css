@@ -34,6 +34,18 @@ h2 {
        padding-left: 20px
 }
 
+h3 {
+    font-family: KOMIKA;
+    font-size: 28px;
+    color: #ffffff;
+}
+
+#BOXES {
+    font-family: GUDEA;
+    color: #000000;
+    font-weight: bold;
+}
+
 
 /*************************************************************************HEADER CSS***************************************************************/
 
