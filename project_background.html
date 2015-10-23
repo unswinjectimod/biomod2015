@@ -46,10 +46,10 @@
 		<!--<li id="project_link"></li>-->
 		<li id="project_link" class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Project<span class="caret"></span></a>
-			<ul class="dropdown-menu" role="menu" style="background-color: #337D83">
-				<li><a href="project_background.html" style="background-color: #337D83; color: #ffffff">The Background</a></li>
+			<ul class="dropdown-menu" role="menu" style="background-color: #c4928c">
+				<li><a href="project_background.html" style="background-color: #c4928c; color: #8c3425">The Background</a></li>
 				<li class="divider"></li>
-				<li><a href="project_goals.html" style="background-color: #337D83; color: #ffffff">The Goals</a></li>
+				<li><a href="project_goals.html" style="background-color: #c4928c; color: #ffffff">The Goals</a></li>
 			</ul>
 		</li>
 		<!--<li id="lab_book_link"></li>-->
@@ -76,104 +76,74 @@
   <head>
 	
 	<script type="text/javascript">
-		$('#team_link').addClass('active');
+		$('#project_link').addClass('active');
 	</script>
 
-<!--------------------------------------------------------------------CONTENT AND SHIT---------------------------------------------------------------->
- 
-<style type="text/css">
+<!---------------------------------------------------------------CSS AND SHIT----------------------------------------------------------------->
 
-#TEAM_LOGO {
-		display:block;
-		margin-left: auto;
-		margin-right: 50px;
-		background-image: url(images/Injectimod_logo_small.png);
-		background-repeat: no-repeat;
-		background-position: bottom;
-}
-
-#TEAM_BLURB_CONTAINER {
-	   width: 725px;
-	   margin-left: 50px;
-	   margin-right: auto;
-	   display: block; 
-	   vertical-align: right; 
-       text-align: left;   
-	   font-size: 120%;
-       padding: 0px 20px 15px 30px ;
-       border-radius: 20px;
-       background-color: #005c64;
-}
-
-#team_members {
-       background-color: #9d493f;
-       padding: 20px 0px 20px 0px;
-       border-style: solid;
-       border-color: #fbcf49;
-       border-width: 20px 0px 20px 0px;
-}
-
-#team_supervisors {
-       background-color: #497a74;
-       padding: 20px 0px 20px 0px;
-       border-style: solid;
-       border-color: #fbcf49;
-       border-width: 20px 0px 20px 0px;
-}
-#team {
-       height: 240.53px;
-       weight: 404.52px;
-       padding: 12px 12px 15px 12px;
-}
-
+<style>
+    #BACKGROUND {
+        font-weight: bold;
+        font-size: 20px;
+        width: auto;
+	    display: block; 
+	    vertical-align: right; 
+        text-align: left;   
+	    font-size: 120%;
+        padding: 20px 20px 20px 20px;
+        border-style: solid;
+        border-color: #8e413a;
+        border-width: 20px;
+        border-radius: 25px;
+        background-color: #ffffff;    
+    }
+    
+    #PROJECT {
+        font-weight: bold;
+        font-size: 20px;
+        width: auto;
+	    display: block; 
+	    vertical-align: right; 
+        text-align: left;   
+	    font-size: 120%;
+        padding: 20px 20px 20px 20px;
+        border-style: solid;
+        border-color: #337d83;
+        border-width: 20px;
+        border-radius: 25px;
+        background-color: #ffffff;    
+    }
+    
 </style>
+      
+<!---------------------------------------------------------------CONTENT AND SHIT------------------------------------------------------------->
 
-     <div class="container" style="text-align:center; margin-top: 75px;">
-          <div class="row">
-	       <div class="col-md-4">
-		    <img id="TEAM_LOGO" style="height: 174px; width: 354px;" src="images/Injectimod_logo_small.png">
-           </div>
-               <div class="col-md-4">
-                    <div id="TEAM_BLURB">
-			           <div id="TEAM_BLURB_CONTAINER"><div style="height: 23px;"></div>
-                            <p style="font-family: GUDEA; color: #ffffff;">We're a group of seven students from the University of New South Wales, based at the Victor Chang Cardiac Research Institute.</p>
-                            <p style="font-family: GUDEA; color: #ffffff;">We come from a variety of different backgrounds, including Aerospace Engineering, Biology, Chemistry, Medical Science and Material Science. What we share is a love of science and engineering. That's why we're doing BIOMOD, on top of our university studies!</p>
-                        </div> 
-		            </div>
-               </div>
-           </div>
-     </div>
-
-<br>
-
-<h1> MEET THE TEAM - THE UNDERGRADUATES </h1>
-<div id="team_members">
-     <center>
-          <img id="team" src="images/James-Team-small.png">
-          <img id="team" src="images/Steph-Team-small.png">
-          <img id="team" src="images/Winton-Team-small.png">
-          <img id="team" src="images/Himmat-Team-small.png">
-          <img id="team" src="images/Karine-Team-small.png">
-          <img id="team" src="images/Sid-Team-small.png">
-          <img id="team" src="images/Stephen-Team-small.png"> 
-     </center>
+<div class="container" style="text-align:left; margin-top: 75px;">
+    <div class="row">
+        <h1 style="padding-left: 35px">The Background</h1>
+    </div>
+    <div id="BACKGROUND">
+        <p>Have you ever wondered how bacteria can generate nano-motors that can reach speeds of over 100,000 revolutions per minute? Or how our cells build tiny generators that power our body through all our daily tasks?</p>
+        <p>Through billions of years of evolution and natural selection, nature has been fabricating such diverse and complex structures effortlessly with high precision, adaptability and robustness [1]. This occurs through a biological phenomenon known as ‘self-assembly’ where many brainless molecules somehow self-organise and spontaneously form functional machinery with emergent properties.</p>
+        <p>One example, is the Type III Secretion System (T3SS), bacteria’s highly conserved molecular syringe, which self-assembles from over 20 different protein subunits [2]. The T3SS secretes effector proteins directly into host cells. These have a range of activities including cell cycle arrest, membrane remodelling and immune suppression, all which help the bacteria to cause infections and evade the host’s immune system (Figure 1) [3-5].</p>
+        <p>This results in conditions such as diarrhoea to more devastating diseases like the black plague and typhoid fever. The tip of the T3SS is a pentameric complex  that is required for the insertion of the syringe [6]. Inhibiting the function of the tip proteins has been shown to significantly impair virulence in several pathogenic bacteria [4]. It is also one of the only parts of the T3SS exposed to our immune system [6]. Subsequently, the T3SS tip complex is a primary target for immunisation [7].</p>     
+    </div>
 </div>
-
-<br>
-
-<h2> MEET THE TEAM - THE SUPERVISORS </h2>
-<div id="team_supervisors">
-     <center>
-          <img id="team" src="images/Lawrence-Team-small.png"> 
-          <img id="team" src="images/Jon-Team-small.png">
-          <img id="team" src="images/Andrew-Team-small.png">
-          <img id="team" src="images/Matt-Team-small.png">
-     </center>
+      
+    <p><center><img src="images/project_background.png" style="height: 400px; width: 1054.5px;"></center></p>
+      
+<div class="container" style="text-align:left;">
+    <div class="row">
+        <h2 style="padding-left: 35px">Project: Artificial assembly of the T3SS tip complex</h2>
+    </div>
+    <div id="PROJECT">
+        <p>Here at Team Injectimod, we're artificially building the T3SS tip complex, which is a new ‘bottoms-up’ way of looking at these complex biological machines. To do this, we need the world’s tiniest scaffold! We made this using DNA origami - a method of folding DNA into almost any nano-scale 3D structure. By attaching the protein subunits of the tip to this scaffold, we were able to observe the process of T3SS tip self-assembly for the first time! This will shed light on one of Nature’s greatest mysteries: how self-assembly actually works. It will also allow us to create a novel platform for vaccine development by artificially assembling antigenic structures.</p>
+    </div>
 </div>
-
+    
 <br>
-
-<!--------------------------------------------------------------ACTUAL FOOTER--------------------------------------------------------------------------->
+       
+<!--------------------------------------------------------------ACTUAL FOOTER------------------------------------------------------------------->
 
     <div class="footer">
         <div class="container">

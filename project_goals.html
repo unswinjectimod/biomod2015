@@ -46,10 +46,10 @@
 		<!--<li id="project_link"></li>-->
 		<li id="project_link" class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Project<span class="caret"></span></a>
-			<ul class="dropdown-menu" role="menu" style="background-color: #337D83">
-				<li><a href="project_background.html" style="background-color: #337D83; color: #ffffff">The Background</a></li>
+			<ul class="dropdown-menu" role="menu" style="background-color: #c4928c">
+				<li><a href="project_background.html" style="background-color: #c4928c; color: #ffffff">The Background</a></li>
 				<li class="divider"></li>
-				<li><a href="project_goals.html" style="background-color: #337D83; color: #ffffff">The Goals</a></li>
+				<li><a href="project_goals.html" style="background-color: #c4928c; color: #8c3425">The Goals</a></li>
 			</ul>
 		</li>
 		<!--<li id="lab_book_link"></li>-->
@@ -76,104 +76,83 @@
   <head>
 	
 	<script type="text/javascript">
-		$('#team_link').addClass('active');
+		$('#project_link').addClass('active');
 	</script>
 
-<!--------------------------------------------------------------------CONTENT AND SHIT---------------------------------------------------------------->
- 
-<style type="text/css">
-
-#TEAM_LOGO {
-		display:block;
-		margin-left: auto;
-		margin-right: 50px;
-		background-image: url(images/Injectimod_logo_small.png);
-		background-repeat: no-repeat;
-		background-position: bottom;
-}
-
-#TEAM_BLURB_CONTAINER {
-	   width: 725px;
-	   margin-left: 50px;
-	   margin-right: auto;
-	   display: block; 
-	   vertical-align: right; 
-       text-align: left;   
-	   font-size: 120%;
-       padding: 0px 20px 15px 30px ;
-       border-radius: 20px;
-       background-color: #005c64;
-}
-
-#team_members {
-       background-color: #9d493f;
-       padding: 20px 0px 20px 0px;
-       border-style: solid;
-       border-color: #fbcf49;
-       border-width: 20px 0px 20px 0px;
-}
-
-#team_supervisors {
-       background-color: #497a74;
-       padding: 20px 0px 20px 0px;
-       border-style: solid;
-       border-color: #fbcf49;
-       border-width: 20px 0px 20px 0px;
-}
-#team {
-       height: 240.53px;
-       weight: 404.52px;
-       padding: 12px 12px 15px 12px;
-}
-
+<!---------------------------------------------------------------CSS AND SHIT----------------------------------------------------------------->
+      
+<style>
+    #GOALS {
+        font-weight: bold;
+        font-size: 20px;
+        width: auto;
+	    display: block; 
+	    vertical-align: right; 
+        text-align: left;   
+	    font-size: 120%;
+        padding: 20px 20px 20px 20px;
+        border-style: solid;
+        border-color: #005c64;
+        border-width: 20px;
+        border-radius: 25px;
+        background-color: #ffffff;    
+    }  
+    
+    #to_overview {
+        color: #005c64;
+    }
+    
+    #to_overview:hover {
+        color: #8c3425;
+        text-decoration: none;
+    }
+    
 </style>
+      
+<!---------------------------------------------------------------CONTENT AND SHIT------------------------------------------------------------->
 
-     <div class="container" style="text-align:center; margin-top: 75px;">
-          <div class="row">
-	       <div class="col-md-4">
-		    <img id="TEAM_LOGO" style="height: 174px; width: 354px;" src="images/Injectimod_logo_small.png">
-           </div>
-               <div class="col-md-4">
-                    <div id="TEAM_BLURB">
-			           <div id="TEAM_BLURB_CONTAINER"><div style="height: 23px;"></div>
-                            <p style="font-family: GUDEA; color: #ffffff;">We're a group of seven students from the University of New South Wales, based at the Victor Chang Cardiac Research Institute.</p>
-                            <p style="font-family: GUDEA; color: #ffffff;">We come from a variety of different backgrounds, including Aerospace Engineering, Biology, Chemistry, Medical Science and Material Science. What we share is a love of science and engineering. That's why we're doing BIOMOD, on top of our university studies!</p>
-                        </div> 
-		            </div>
-               </div>
-           </div>
-     </div>
-
-<br>
-
-<h1> MEET THE TEAM - THE UNDERGRADUATES </h1>
-<div id="team_members">
-     <center>
-          <img id="team" src="images/James-Team-small.png">
-          <img id="team" src="images/Steph-Team-small.png">
-          <img id="team" src="images/Winton-Team-small.png">
-          <img id="team" src="images/Himmat-Team-small.png">
-          <img id="team" src="images/Karine-Team-small.png">
-          <img id="team" src="images/Sid-Team-small.png">
-          <img id="team" src="images/Stephen-Team-small.png"> 
-     </center>
+<div class="container" style="text-align:left; margin-top: 75px;">
+    <div class="row">
+        <h2 style="padding-left: 35px">The Goals</h2>
+    </div>
+    <div id="GOALS">
+        <p style="font-size: 20px">To achieve assembly of the protein tip complex, there were several goals that had to be accomplished along the way:
+            <ol>
+                <li style="padding-top:7px"><span style="color: #005c64">INVESTIGATE THE BIO-BLUEPRINT THAT MAKES UP THE T3SS NEEDLE COMPLEX</span></li>
+                <br>
+                <li style="padding-top:7px"><span style="color: #005c64">DESIGN AND BUILD A DNA SCAFFOLD THAT RESEMBLES THE T3SS BIO-BLUEPRINT</span></li>
+                <br>
+                <li style="padding-top:7px"><span style="color: #005c64">OBTAIN THE MATERIALS NEEDED TO ASSEMBLE THE T3SS TIP COMPLEX</span></li>
+                <br>
+                <li style="padding-top:7px"><span style="color: #005c64">DEVISE CHEMISTRY CONJUGATION METHODS TO ATTACH THE TIP PROTEINS ONTO OUR DNA SCAFFOLD</span></li>
+                <br>
+                <li style="padding-top:7px"><span style="color: #005c64">CHARACTERISE THE STRUCTURE OF THE TIP COMPLEX AND ITS KINETICS OF ASSEMBLY</span></li>
+                    <ul>
+                        <li style="padding-top:7px">Optimisation of biolayer interferometry protocols for DNA-DNA and DNA-protein interactions</li>
+                        <li style="padding-top:7px">Characterise the kinetic values of 10bp NTA DNA to monomer template</li>
+                        <li style="padding-top:7px">Characterise the kinetic values of single protein to monomer template</li>
+                        <li style="padding-top:7px">Assemble the protein tip using DNA racquet template</li>
+                        <li style="padding-top:7px">Characterise the kinetic values of five proteins to racquet template</li>
+                        <li style="padding-top:7px">Determine if protein complex assembles cooperatively</li>
+                    </ul>
+                <br>
+                <li style="padding-top:7px"><span style="color: #005c64">VISUALISE THE ASSEMBLY OF THE PROTEIN COMPLEX ON THE DNA SCAFFOLD AT A MOLECULAR SCALE</span></li>
+                    <ul>
+                        <li style="padding-top:7px">Characterise the background intensity of neutravidin surface</li>
+                        <li style="padding-top:7px">Label tip proteins with fluorophore for single molecule microscopy</li>
+                        <li style="padding-top:7px">Characterise the intensity of a single fluorophore</li>
+                        <li style="padding-top:7px">Characterise the non-specific interaction of fluorophore with neutravidin surface
+                        <li style="padding-top:7px">Observe the intensity vs. time profile of fluorophore at the presence of our DNA scaffold</li>
+                    </ul>
+            </ol>
+        <p style="font-size: 20px">Check out our awesome workflow <a id="to_overview" href="labbook_overview">here</a>!</p>
+    </div>
 </div>
-
+      
+      
 <br>
-
-<h2> MEET THE TEAM - THE SUPERVISORS </h2>
-<div id="team_supervisors">
-     <center>
-          <img id="team" src="images/Lawrence-Team-small.png"> 
-          <img id="team" src="images/Jon-Team-small.png">
-          <img id="team" src="images/Andrew-Team-small.png">
-          <img id="team" src="images/Matt-Team-small.png">
-     </center>
-</div>
-
-<br>
-
-<!--------------------------------------------------------------ACTUAL FOOTER--------------------------------------------------------------------------->
+       
+<!--------------------------------------------------------------ACTUAL FOOTER------------------------------------------------------------------->
 
     <div class="footer">
         <div class="container">

@@ -41,10 +41,32 @@
                 <img src="images/Injectimod_bannerlogo.png" style="padding: 3px 15px 0px 10px; width: 191.1; height: 47.32px;">
 	</div>
 	<div class="navbar-collapse collapse">
-	  <ul class="nav navbar-nav">
+	  	  <ul class="nav navbar-nav">
 		<li id="home_link"><a href="index.html">Home</a></li>
-		<li id="project_link"><a href="project_page.html">Our Project</a></li>
-		<li id="lab_book_link"><a href="labbook_page.html">Our Lab Book</a></li>
+		<!--<li id="project_link"></li>-->
+		<li id="project_link" class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Project<span class="caret"></span></a>
+			<ul class="dropdown-menu" role="menu" style="background-color: #337D83">
+				<li><a href="project_background.html" style="background-color: #337D83; color: #ffffff">The Background</a></li>
+				<li class="divider"></li>
+				<li><a href="project_goals.html" style="background-color: #337D83; color: #ffffff">The Goals</a></li>
+			</ul>
+		</li>
+		<!--<li id="lab_book_link"></li>-->
+		<li class="dropdown" id="lab_book_link">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Lab Book<span class="caret"></span></a>
+			<ul class="dropdown-menu" role="menu" style="background-color: #337D83">
+				<li><a href="labbook_page.html" style="background-color: #337D83; color: #ffffff">Overview</a></li>
+				<li class="divider"></li>
+				<li><a href="labbook_bioblueprint.html" style="background-color: #337D83; color: #ffffff">Bio Blueprint</a></li>
+                <li class="divider"></li>
+				<li><a href="labbook_proteindesign.html" style="background-color: #337D83; color: #ffffff">Protein Design</a></li>
+				<li><a href="labbook_proteinproduction.html" style="background-color: #337D83; color: #ffffff">Protein Production</a></li>
+				<li><a href="labbook_dnadesign.html" style="background-color: #337D83; color: #ffffff">DNA Design</a></li>
+				<li><a href="labbook_imaging.html" style="background-color: #337D83; color: #ffffff">Imaging</a></li>
+				<li><a href="labbook_kinetics.html" style="background-color: #337D83; color: #ffffff">Kinetics</a></li>
+			</ul>
+		</li>
         <li id="team_link"><a href="team_page.html">Our Team</a></li>
 		<li id="sponsors_link"><a href="sponsors_page.html">Sponsors</a></li>
 	  </ul>
