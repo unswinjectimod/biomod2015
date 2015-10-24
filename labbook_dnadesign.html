@@ -99,28 +99,39 @@
                     <a href="#intro" style="color:#fff">INTRODUCTION</a>
                 </li>
                 <li>
-                     <a href="#results" style="color:#fff">KEY RESULTS</a>
+                     <a href="#results" style="color:#fff">METHODS AND RESULTS</a>
                 </li>
+                    <ul>
+                        <li>
+                             <a href="#result1" style="color:#fff">Linear Scaffold</a>
+                        </li>
+                        <li>
+                             <a href="#result2" style="color:#fff">Racquet Scaffold</a>
+                        </li>
+                        <li>
+                             <a href="#result3" style="color:#fff">Puckered Scaffold</a>
+                        </li>
+                        <li>
+                             <a href="#result4" style="color:#fff">How we know we made it</a>
+                        </li>
+                    </ul>
                 <li>
                     <a href="#matsnmets" style="color:#fff">MATERIALS AND METHODS</a>
                 </li>
                     <ul>
                         <li>
-                             <a href="#exp1" style="color:#fff">Monomer template hybridisaion</a>
+                             <a href="#exp1" style="color:#fff">Creating Staple Mixes</a>
                         </li>
                         <li>
-                             <a href="#exp2" style="color:#fff">Pre-annealed template hybridisation</a>
+                             <a href="#exp2" style="color:#fff">Synthesis</a>
                         </li>
                         <li>
-                             <a href="#exp3" style="color:#fff">Protein to trimer template</a>
+                             <a href="#exp3" style="color:#fff">Testing Methods</a>
                         </li>
                         <li>
-                             <a href="#exp4" style="color:#fff">Protein to racquet template</a>
+                             <a href="#exp4" style="color:#fff">Future Designs</a>
                         </li>
                     </ul>
-                <li>
-                     <a href="#supps" style="color:#fff">SUPPLEMENTARY DATA</a>
-                </li>
             </ul>
         </div>        
     </div>
@@ -174,16 +185,23 @@
                         </div> 
                         </div>    
                     </div>
-                </div>
-            </div>
              <br>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h5 id="results" style="padding-top:75px">KEY RESULTS</h5>
-                        <p style="20px">Our DNA Designs - Linear Scaffold</p>
-                        <p>The linear scaffold is a 50 base pair length single-stranded DNA template. Primarily used in Blitz, it contains three different ‘domains’ with which function is changed. The 5 prime end is modified with biotin for attachment to a streptavidin surface. A central binding domain consisting of 10 base pairs allows attachment to a complementary modified strand in the middle of the template. The modification was chosen depending on the test used, such as a 5 prime Tris Aminated modification for protein to DNA conjugation. 20 base pairs either side are non-complementary to any other strands, and are thus termed non-binding.</p>
-                        <p style="20px">Our DNA Designs - Tennis Racquet</p>
+                        <h5 id="results" style="padding-top:75px">KEY RESULTS</h5>         
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h6 id="result1" style="padding-top:75px">Linear Scaffold</h6>
+                            <p>The linear scaffold is a 50 base pair length single-stranded DNA template. Primarily used in Blitz, it contains three different ‘domains’ with which function is changed. The 5 prime end is modified with biotin for attachment to a streptavidin surface. A central binding domain consisting of 10 base pairs allows attachment to a complementary modified strand in the middle of the template. The modification was chosen depending on the test used, such as a 5 prime Tris Aminated modification for protein to DNA conjugation. 20 base pairs either side are non-complementary to any other strands, and are thus termed non-binding.</p>
+                    </div>            
+                </div>
+    
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h6 id="result2" style="padding-top:75px">Tennis Racquet</h6>
                         <p>NUPACK algorithim; Nucleic acid sequence design via efficient ensemble defect optimization was utilised in designing a ‘tennis racquet’ like flat DNA design. The racquet was ordered such that the 5’ end was biotinylated, allowing for conjugation to a streptavidin surface. Ten base pair single stranded DNA (ssDNA) was ordered with complementary sequence to the binding domain. This ten base pair ssDNA is the conjugating strand and was made with to be 5’ or 3’ Tris Aminated. (Check out <a href="labbook_conjugation.html">Conjugation Chemistry</a> to find out more). Here’s our NUPACK code! </p>
                             <ul>
                                 <li>material = dna</li>
@@ -197,8 +215,12 @@
                         </center>
                         <p>tennisracket.seq = stem nonbinding binding nonbinding binding nonbinding binding nonbinding binding nonbinding binding nonbinding stem*</p>
                         <p>This scaffold was primarily used in understanding binding kinetics! You can check this out <a href="labbook_kinetics.html">here</a>. </p>
-                        <p style="20px">Our DNA Designs - Puckered Barrel</p>
-                        <p>DNA barrels have previously been made with single walls. We designed barrels with a puckered wall to appropriate the structure’s end to the size required by the tip complex.</p> 
+                    </div>            
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h6 id="result3" style="padding-top:75px">Puckered Barrel</h6>
+                                                    <p>DNA barrels have previously been made with single walls. We designed barrels with a puckered wall to appropriate the structure’s end to the size required by the tip complex.</p> 
                         <p>Initially, staple crossovers and potential crossover sites for each barrel were designed using an algorithm by our team. Our problem poses a significant design challenge, as the T3SS tip complex has an odd numbered rotational symmetry. Puckered walls allow both odd numbered rotational symmetry, but also smaller diameters, which is perfect for our miniscule tip complex!</p>
                         <p>The hanging M13 scaffold (of which approximately 180 base pairs exists) was made to hang from the centre of a beta barrel. It was placed here to position it in the most unlikely location for interaction with either end of the barrel.</p>
                         <p>Here’s what the barrel should look like from one of its ends:</p>
@@ -220,8 +242,33 @@
                             <p>Barrels are made of two layers of barrel wall. The outer layers are referred to as beta barrels, with the inner being referred to as alpha. We also created many staple extensions to functionalise the barrel in alignment with our testing techniques.</p>
                         </center>
                         <p>Barrels are made of two layers of barrel wall. The outer layers are referred to as beta barrels, with the inner being referred to as alpha. We also created many staple extensions to functionalise the barrel in alignment with our testing techniques.</p>
-                    </div>            
-                </div>
+                    </div>
+                </div>            
+                 <div class="row">
+                    <div class="col-lg-12">
+                        <h6 id="result4" style="padding-top:75px">How we know we made it</h6>
+                            <p>
+                            <ol>
+                                <li>
+                                    <p>Agarose gel electrophoresis</p>
+                                    </p>This was our first indication that our design was on track because it showed that our staple and scaffold strands were binding to each other! This was indicated because of the clear difference between m13 and staple only lanes in comparison to full DNA origami mixed lanes!</p>
+                                </li>
+                                <li>
+                                    <p>TEM/AFM</p>
+                                    <p>To make sure our DNA had formed the right shape, we visualised these with AFM and EM. These two methods allowed us to clearly see our tiny construction scaffold, which had dimensions that were consistent with our design.</p>
+                                    <center><img src="images/dnadesignfig1.jpg"><p>Figure 1: AFM image of "Hero Barrels"</p></center>
+                                    <center><img src="images/dnadesignfig2.jpg"><p>Figure 2: EM image of "Hero Barrels"</p></center>
+                                </li>
+                                <li>
+                                    <p>SAXS</p>
+                                    <p>AFM and EM only let us see our nanostructures when they’re stuck to a surface. Occasionally the surface itself and the AFM tip can affect the nanostructures’ shape, which may be why our barrels looked slightly flat with AFM. It was important for us to know whether our structures were round barrels in solution. In order for us to obtain this data, we took our nanostructured to the Australian synchrotron, where we were able to characterise our DNA nanostructures with small-angle X-ray scattering (SAXS). By comparing our experimental scattering data with an array of structural models, each with different diameters (Figure 3), we were able to estimate the dimensions of our DNA nanostructure in solution. These were consistent with our design, but the fit to our X-ray scattering data is far from perfect. This could be for several reasons. Firstly, the DNA in solution will not be a static rigid structure like our structural models. Secondly, our sample may not have been 100% pure during our SAXS measurements. Both would flatten the pronounced diffraction bumps, of which we can see in theoretical data (Figure 4).</p>
+                                                                        <center><img src="images/dnadesignfig4.jpg"><p>Figure 3: Plot showing fit between theoretical models with various diameters and experimental small-angle X-ray scattering data.</p></center>
+                                    <center><img src="images/dnadesignfig5.jpg"><p>Figure 4: Comparison of theoretical scattering calculated from a structural model of the DNA nanostructure with a diameter of 9.5 nm (blue) and experimental small-angle X-ray scattering (black). Errors are twice the standard error of the mean.</p></center>
+                                </li>
+                            </ol>
+                            </p>
+                    </div>
+      
                 <div class="row">
                     <div class="col-lg-12">
                         <h4 id="matsnmets" style="padding-top:75px">Materials and Methods</h4>
@@ -229,25 +276,28 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <h6 id="exp1" style="padding-top:75px"><!--EXPERIMENT NAME--></h6>
-                            <p><!--STICK SHIT HERE--></p>
+                        <h6 id="exp1" style="padding-top:75px">Creating staple mixes</h6>
+                            <p>Resuspension (COMMON staple mix)</p>
                             <p>
                             <ol>
                                 <li>
-                                    <p><!--STEPS AND SHIT--></p>
-                                    <p></p>
-                                    <p></p>
+                                    <p>DNA was ordered in 3 x 96 well plates. As each well was ordered with dried DNA, we resuspended each well with Synthesis Buffer (SB). Each plate was spun at 23,000 G for 15 minutes prior to resuspension. Synthesis Buffer was first made up to a stock solution of 1 Litre with MQ water. 20 μL of SB was added to each well. Plates were then re-spun.</p>
                                 </li>
+                            </ol>
+                            </p>
+                            <p>Synthesis buffer stock solution</p>
+                            <p>
+                            <ol>
                                 <li>
-                                    <p><!--STEPS AND SHIT--></p>
-                                    <p></p>
-                                    <p></p>
-                                    <p></p>
+                                    <p>SB contains 33 mM Tris Acetate and 12.5 mM Mg Acetate. Stock solutions of Tris Acetate were at 1 M, and the molar weight of Mg Acetate is 142.392 g/mol. We added 33 mL of Tris Acetate and 1.78 grams of Mg Acetate, and added MQ up to 1 L. a 200 mL solution was taken as working SB and used for each experiment.</p>
                                 </li>
+                            </ol>
+                            </p>
+                            <p>Making COMMON and STAPLE EXTENSION mixes</p>
+                            <p>
+                            <ol>
                                 <li>
-                                    <p><!--STEPS AND SHIT--></p>
-                                    <p></p>
-                                    <p></p>
+                                    <p>The Barrel was ordered with COMMON staples that made the majority of the barrel, and were the first 216 staples. The rest were labelled STAPLE extension DNA staples and were made as mentioned before. 1 μL of each common staple well was added to one Eppendorf tube, to form a COMMON staple mix! Each staple concentration was made to 500 μM with SB. Staple extension mixes were also made for each staple type (labelled with colours in the .csv). Each stock solution of both COMMON and EXTENSIONS were made into 10 μL aliquots, ready for synthesis later on.</p>
                                 </li>
                             </ol>
                             </p>
@@ -257,25 +307,34 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <h6 id="exp2" style="padding-top:75px"><!--EXPERIMENT NAME--></h6>
-                            <p><!--STICK SHIT HERE--></p>
+                        <h6 id="exp2" style="padding-top:75px">Synthesis</h6>
+                            <p>M13 Buffer Exchange</p>
                             <p>
                             <ol>
                                 <li>
-                                    <p><!--STEPS AND SHIT--></p>
-                                    <p></p>
-                                    <p></p>
+                                    <p>The M13mp18 ssDNA template scaffold was purchased from Bayou Biolabs and buffer exchanged with DNA origami synthesis buffer (33mM Tris Acetate, 12.5mM Mg Acetate, pH 8.2) in Micro Bio-Spin™ 6 columns (Bio-Rad). Staple strands were purchased from Integrated DNA Technologies, shipped dry and suspended in DNA origami synthesis buffer to 500µM.</p>
+                                </li>
+                            </ol>
+                            </p>
+                    <p>Mixing Stock Solutions</p>
+                                <li>
+                                    <p>Each aliquot was made to allow 1 to 1 addition of each part required for synthesis. For our common (Non-Hero Barrel) or our stock standard, we used 4 parts. The most important requirement for DNA origami is the M13 scaffold. Staples were added to M13 template in at 5 – 20 fold molar excess. Final concentration of M13 was either 5 or 10nM The barrel was also made by addition of the common staple mix, alongside any staple extension types we wanted. As shown we had two sides for staple change, with four possible choices (excluding blunt ends). For the HERO barrel (our heavily functionalised barrel) more modifications are required, and thus its ‘recipe’ is changed for annealing. Overall, following mixing, we annealed our barrels with an annealing process in a PCR machine, and visualised the results using agarose gels.</p>
+                                </li>
+                                <p>Barrel Synthesis: Types</p>
+                            <p>
+                            <ol>
+                                <li>
+                                    <p>Blunt Staple Barrel - The Blunt Staple Barrel is the barrel without any modifications at all and was made to test the synthesis protocol. 5 μL of M13, Common staples, (Red) Blunt end and (Orange) Blunt ends were added together before the annealing protocol. This was used in structural study via Small Angle X-Ray Scattering.</p>
                                 </li>
                                 <li>
-                                    <p><!--STEPS AND SHIT--></p>
-                                    <p></p>
-                                    <p></p>
-                                    <p></p>
+                                    <p>Non-Hero Barrel - Non-Hero Barrel was made only with conjugation sites in mind. Considered our mid-range barrel, it was utilised mostly in attaching Green Fluorescent Protein (GFP) to test conjugation via Microscopy. You can check this out here! 5 μL of M13, Common staples, (Purple) beta barrel direct staples and (Red) blunt ends were mixed. Utilising other staple mixes in place for both sides will change the type and side of the extensions. These also depend on the particular position of the strand binding to these extended staples. 5’ or 3’ modified DNA will change the binding type. Please refer above!</p>
                                 </li>
                                 <li>
-                                    <p><!--STEPS AND SHIT--></p>
-                                    <p></p>
-                                    <p></p>
+                                    <p>Hero Barrel - The Hero barrel is our most modified scaffold for the tip complex! It has both sides for staple extensions, four sites for fluorescent modified strands and two sites biotinylated strands. (refer to figure 4). New COMMON staple mixes were made but with adapter strands to account for the 6 extended strands situated on the walls, not at the ends. These particular strands that were taken out of the common staple mix and made again are the following wells: Plate 1: B12, B10, F7 and Plate 2: E1, E9, G7. These were replaced with the 6 ordered strands (each with two thymine base pairs and then a twenty base pair extension for adapting to modified strands). The staple mix was then made into aliquots as in 2.2.3. Following addition of 1 to 1 addition of each barrel constituent, modified strands were added. Excess 5’ Tris Aminated DNA was added to bind to staple extended strands (Purple).</p>
+                                </li>
+                                <li>
+                                    <p>Synthesis Annealing - Samples were annealed in a Bio-Rad C1000™ Thermal Cycler using the following temperature settings: 95°C for 10 mins, then 94 to 86°C over 10 mins in 0.1°C steps, 85 to 70°C over 75 mins in 0.1°C steps, 70 to 40° in 450 mins in 0.1°C steps, 40 to 25°C in 150 mins in 0.1°C steps, then 10 mins at 20°C and stored at 4°C until use. Reaction volumes ranged from 20 to 150µl.</p>
+                                    <center><p><img src="images/dnadesignfig6.jpg"</p></center>
                                 </li>
                             </ol>
                             </p>
@@ -283,25 +342,22 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <h6 id="exp3" style="padding-top:75px"><!--EXPERIMENT NAME--></h6>
-                            <p><!--STICK SHIT HERE--></p>
-                            <p>
-                            <ol>
+                        <h6 id="exp3" style="padding-top:75px">Testing Methods</h6>
+                        <p>Agarose Gel</p>
                                 <li>
-                                    <p><!--STEPS AND SHIT--></p>
-                                    <p></p>
-                                    <p></p>
+                                    <p>Agarose was dissolved to a final concentration of 1% (w/v) in 1x TAE (Biorad) and pre-stained with a drop of RedsafeTM nucleic acid staining solution. The samples were mixed with New Englands Biolabs 6x Gel loading dye and undergone electrophoresis for approximately 30 minutes at 120V. The gel was visualised under UV light post electrophoresis.</p>
                                 </li>
+                            <p>AFM</p>
                                 <li>
-                                    <p><!--STEPS AND SHIT--></p>
-                                    <p></p>
-                                    <p></p>
-                                    <p></p>
+                                    <p>DNA origami structures were annealed with 5nM template and 10x staple excess. A drop of unpurified sample (5µl) was placed onto freshly cleaved mica surface and allowed to adsorb for 5 minutes, then AFM head was lowered until contact between the tip and the sample in solution was made. Imaging was performed on a Bioscope Catalyst™ Atomic Force Microscope (Bruker) using ScanAsyst and Peakforce Tapping mode in fluid, with SNL-A tips (Bruker). Spring constant was set to 0.58N/m, scan rate was 0.977Hz. Scan size was 1μm square with 512 samples/line.</p>
+                                <li>
+                                    <p>Images were processed using Gwyddion software by first levelling data by mean plane subtraction, then correcting lines by matching height median, then setting the zero height andlevelling again by fitting a plane through three points. Each of the three points was chosen in an area free from structures and averaged over an 11-pixel radius.</p>
                                 </li>
+                            <p>EM</p>
                                 <li>
-                                    <p><!--STEPS AND SHIT--></p>
-                                    <p></p>
-                                    <p></p>
+                                    <p>DNA origami samples were annealed as per the protocol above, drop cast onto carbon/formvar coated copper grids and given 5 minutes to adsorb. Excess sample was wicked off using filter paper. Grids were then negative stained for 2 minutes with 2% aqueous uranyl acetate. The excess stain was then wicked off using filter paper, and grids were dried overnight or until imaging. Imaging was performed on a Tecnai G2 20 Transmission Electron Microscope (FEI) in bright field mode at 200kV.</p>
+                                <li>
+                                    <p>Scans which showed rectangular structures were assumed to show barrels side-on. From these scans, lengths and widths were measured in Gwyddion and averaged in Excel. Scans which showed ring-like structures were assumed to show barrels end-on. These were manually path-traced with Bezier curves and measured in Adobe Illustrator and averaged in Excel. The only structures measured in this case were those determined to be unambiguously closed.</p>
                                 </li>
                             </ol>
                             </p>
@@ -332,14 +388,6 @@
                             </ol>
                             </p>
                     </div>            
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h5 id="supps" style="padding-top:75px">Supplementary data</h5>
-                            <p><a href="">SUPP.DATA.PDF</a></p>
-                    </div>            
-                </div>
-             </div>
-        </div>  
       
 <!--------------------------------------------------------------ACTUAL FOOTER------------------------------------------------------------------->
 
