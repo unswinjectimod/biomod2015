@@ -80,6 +80,51 @@
 		$('#lab_book_link').addClass('active');
 	</script>
 
+<!--------------------------------------------------------------SIDE BAR AND SHIT--------------------------------------------------------------->
+      
+<body>
+  <div class="container" style="text-align:left; padding-top:57px">
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        DNA Design
+                    </a>
+                </li>
+                <li>
+                    <a href="#intro" style="color:#fff">INTRODUCTION</a>
+                </li>
+                <li>
+                     <a href="#results" style="color:#fff">KEY RESULTS</a>
+                </li>
+                <li>
+                    <a href="#matsnmets" style="color:#fff">MATERIALS AND METHODS</a>
+                </li>
+                    <ul>
+                        <li>
+                             <a href="#exp1" style="color:#fff">Monomer template hybridisaion</a>
+                        </li>
+                        <li>
+                             <a href="#exp2" style="color:#fff">Pre-annealed template hybridisation</a>
+                        </li>
+                        <li>
+                             <a href="#exp3" style="color:#fff">Protein to trimer template</a>
+                        </li>
+                        <li>
+                             <a href="#exp4" style="color:#fff">Protein to racquet template</a>
+                        </li>
+                    </ul>
+                <li>
+                     <a href="#supps" style="color:#fff">SUPPLEMENTARY DATA</a>
+                </li>
+            </ul>
+        </div>        
+    </div>
+</div>      
+      
 <!--------------------------------------------------------------CSS AND SHIT-------------------------------------------------------------------->
 
 <style>
@@ -98,16 +143,202 @@
     #dnadesign:hover {
         background-position: top;
     }
+
+    p {
+        font-weight: bold;
+        font-size: 16px;
+    }
+    
+    h6 {
+        font-family: KOMIKA;
+        font-size: 24px;
+        color: #000000;     
+    }
     
     
 </style>
       
       
 <!--------------------------------------------------------------CONTENT AND SHIT---------------------------------------------------------------->
-
- <div class="container" style="padding-top: 75px; padding-bottom: 20px">
+         <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h4 id="intro" style="padding-top:75px">INTRODUCTION</h4>
+                        <p>How do you build the world’s smallest construction scaffold from DNA?</p>
+                        <p>In order to build the tip complex, the T3SS has a needle filament that is thought to act as a construction scaffold. This puts 5 tip protein subunits into the correct arrangement for them to self-assemble. To create the tip complex artificially, we’re building the world’s smallest construction scaffolds from DNA. These were designed to mimic the T3SS needle filament that could be chemically functionalised with 5 protein binding sites with the correct spatial arrangement.</p>
+<div class="container" style="padding-top: 75px; padding-bottom: 20px">
         <a id="dnadesign" href="labbook_dnadesign.html"></a>
 </div>       
+                        </div> 
+                        </div>    
+                    </div>
+                </div>
+            </div>
+             <br>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h5 id="results" style="padding-top:75px">KEY RESULTS</h5>
+                        <p style="20px">Our DNA Designs - Linear Scaffold</p>
+                        <p>The linear scaffold is a 50 base pair length single-stranded DNA template. Primarily used in Blitz, it contains three different ‘domains’ with which function is changed. The 5 prime end is modified with biotin for attachment to a streptavidin surface. A central binding domain consisting of 10 base pairs allows attachment to a complementary modified strand in the middle of the template. The modification was chosen depending on the test used, such as a 5 prime Tris Aminated modification for protein to DNA conjugation. 20 base pairs either side are non-complementary to any other strands, and are thus termed non-binding.</p>
+                        <p style="20px">Our DNA Designs - Tennis Racquet</p>
+                        <p>NUPACK algorithim; Nucleic acid sequence design via efficient ensemble defect optimization was utilised in designing a ‘tennis racquet’ like flat DNA design. The racquet was ordered such that the 5’ end was biotinylated, allowing for conjugation to a streptavidin surface. Ten base pair single stranded DNA (ssDNA) was ordered with complementary sequence to the binding domain. This ten base pair ssDNA is the conjugating strand and was made with to be 5’ or 3’ Tris Aminated. (Check out <a href="labbook_conjugation.html">Conjugation Chemistry</a> to find out more). Here’s our NUPACK code! </p>
+                            <ul>
+                                <li>material = dna</li>
+                                <li>structure tennisracket = D20(U62)</li>
+                                <li>domain stem = N20</li>
+                                <li>domain binding = CCGTCCTGCC</li>
+                                <li>domain nonbinding = TT</li>              
+                            </ul>
+                        <center><img src="images/dnatemplatefig1.jpg">
+                            <p>Figure 1. Tennis Racquet design</p>
+                        </center>
+                        <p>tennisracket.seq = stem nonbinding binding nonbinding binding nonbinding binding nonbinding binding nonbinding binding nonbinding stem*</p>
+                        <p>This scaffold was primarily used in understanding binding kinetics! You can check this out <a href="labbook_kinetics.html">here</a>. </p>
+                        <p style="20px">Our DNA Designs - Puckered Barrel</p>
+                        <p>DNA barrels have previously been made with single walls. We designed barrels with a puckered wall to appropriate the structure’s end to the size required by the tip complex.</p> 
+                        <p>Initially, staple crossovers and potential crossover sites for each barrel were designed using an algorithm by our team. Our problem poses a significant design challenge, as the T3SS tip complex has an odd numbered rotational symmetry. Puckered walls allow both odd numbered rotational symmetry, but also smaller diameters, which is perfect for our miniscule tip complex!</p>
+                        <p>The hanging M13 scaffold (of which approximately 180 base pairs exists) was made to hang from the centre of a beta barrel. It was placed here to position it in the most unlikely location for interaction with either end of the barrel.</p>
+                        <p>Here’s what the barrel should look like from one of its ends:</p>
+                        <center><img src="images/dnatemplatefig2.jpg">
+                            <p>Figure 2. Different views of puckered barrel</p>
+                        </center>
+                        <p>CADNANO was used to draw out the crossovers onto the M13 scaffolds strand. Once all staples had been drawn out at the correct crossover, staple ends were designed.</p>
+                        <center><img src="images/dnatemplatefig3.jpg.jpg">
+                        </center>
+                        <p>End staples were designed to allow for 4 different conjugation orientations:</p>
+                            <ol>
+                                <li>Alpha barrel direct</li>
+                                <li>Alpha barrel folded</li>
+                                <li>Beta barrel direct</li>
+                                <li>Beta barrel folded</li>
+                            </ol>
+                        <p>Barrels are made of two layers of barrel wall. The outer layers are referred to as beta barrels, with the inner being referred to as alpha. We also created many staple extensions to functionalise the barrel in alignment with our testing techniques.</p>
+                        <center><img src="images/dnatemplatefig3.jpg.jpg">
+                            <p>Barrels are made of two layers of barrel wall. The outer layers are referred to as beta barrels, with the inner being referred to as alpha. We also created many staple extensions to functionalise the barrel in alignment with our testing techniques.</p>
+                        </center>
+                        <p>Barrels are made of two layers of barrel wall. The outer layers are referred to as beta barrels, with the inner being referred to as alpha. We also created many staple extensions to functionalise the barrel in alignment with our testing techniques.</p>
+                    </div>            
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h4 id="matsnmets" style="padding-top:75px">Materials and Methods</h4>
+                    </div>            
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h6 id="exp1" style="padding-top:75px"><!--EXPERIMENT NAME--></h6>
+                            <p><!--STICK SHIT HERE--></p>
+                            <p>
+                            <ol>
+                                <li>
+                                    <p><!--STEPS AND SHIT--></p>
+                                    <p></p>
+                                    <p></p>
+                                </li>
+                                <li>
+                                    <p><!--STEPS AND SHIT--></p>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </li>
+                                <li>
+                                    <p><!--STEPS AND SHIT--></p>
+                                    <p></p>
+                                    <p></p>
+                                </li>
+                            </ol>
+                            </p>
+                    </div>            
+                </div>
+    
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h6 id="exp2" style="padding-top:75px"><!--EXPERIMENT NAME--></h6>
+                            <p><!--STICK SHIT HERE--></p>
+                            <p>
+                            <ol>
+                                <li>
+                                    <p><!--STEPS AND SHIT--></p>
+                                    <p></p>
+                                    <p></p>
+                                </li>
+                                <li>
+                                    <p><!--STEPS AND SHIT--></p>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </li>
+                                <li>
+                                    <p><!--STEPS AND SHIT--></p>
+                                    <p></p>
+                                    <p></p>
+                                </li>
+                            </ol>
+                            </p>
+                    </div>            
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h6 id="exp3" style="padding-top:75px"><!--EXPERIMENT NAME--></h6>
+                            <p><!--STICK SHIT HERE--></p>
+                            <p>
+                            <ol>
+                                <li>
+                                    <p><!--STEPS AND SHIT--></p>
+                                    <p></p>
+                                    <p></p>
+                                </li>
+                                <li>
+                                    <p><!--STEPS AND SHIT--></p>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </li>
+                                <li>
+                                    <p><!--STEPS AND SHIT--></p>
+                                    <p></p>
+                                    <p></p>
+                                </li>
+                            </ol>
+                            </p>
+                    </div>            
+                </div>
+                 <div class="row">
+                    <div class="col-lg-12">
+                        <h6 id="exp3" style="padding-top:75px"><!--EXPERIMENT NAME--></h6>
+                            <p><!--STICK SHIT HERE--></p>
+                            <p>
+                            <ol>
+                                <li>
+                                    <p><!--STEPS AND SHIT--></p>
+                                    <p></p>
+                                    <p></p>
+                                </li>
+                                <li>
+                                    <p><!--STEPS AND SHIT--></p>
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </li>
+                                <li>
+                                    <p><!--STEPS AND SHIT--></p>
+                                    <p></p>
+                                    <p></p>
+                                </li>
+                            </ol>
+                            </p>
+                    </div>            
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h5 id="supps" style="padding-top:75px">Supplementary data</h5>
+                            <p><a href="">SUPP.DATA.PDF</a></p>
+                    </div>            
+                </div>
+             </div>
+        </div>  
       
 <!--------------------------------------------------------------ACTUAL FOOTER------------------------------------------------------------------->
 

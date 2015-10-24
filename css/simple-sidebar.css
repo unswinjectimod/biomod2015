@@ -68,6 +68,7 @@
     display: block;
     text-decoration: none;
     color: #999999;
+    font-weight: bold;
 }
 
 .sidebar-nav li a:hover {
