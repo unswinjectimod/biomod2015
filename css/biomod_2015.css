@@ -40,6 +40,18 @@ h3 {
     color: #ffffff;
 }
 
+h4 {
+    font-family: KOMIKA;
+    font-size: 28px;
+    color: #9d493f;     
+}
+
+h5 {
+    font-family: KOMIKA;
+    font-size: 28px;
+    color: #497a74;     
+}
+
 #BOXES {
     font-family: GUDEA;
     color: #000000;
