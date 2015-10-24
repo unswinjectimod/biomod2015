@@ -26,6 +26,7 @@
 
 <link href="css/bootstrap.css" rel="stylesheet">
 <link href="css/biomod_2015.css" rel="stylesheet">
+<link href="css/simple-sidebar.css" rel="stylesheet">
 
 <!-------------------------------------------------------------ACTUAL HEADER------------------------------------------------------------->
 
@@ -80,6 +81,55 @@
 		$('#lab_book_link').addClass('active');
 	</script>
 
+      
+<!--------------------------------------------------------------SIDE BAR AND SHIT--------------------------------------------------------------->
+      
+<body>
+  <div class="container" style="text-align:left; padding-top:57px">
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Kinetics
+                    </a>
+                </li>
+                <li>
+                    <a href="#" style="color:#fff">INTRODUCTION</a>
+                </li>
+                <li>
+                     <a href="#" style="color:#fff">BIOLAYER INTERFEROMETRY</a>
+                </li>
+                <li>
+                     <a href="#" style="color:#fff">KEY RESULTS</a>
+                </li>
+                <li>
+                    <a href="#" style="color:#fff">MATERIALS AND METHODS</a>
+                </li>
+                    <ul>
+                        <li>
+                             <a href="#" style="color:#fff">Monomer template hybridisaion</a>
+                        </li>
+                        <li>
+                             <a href="#" style="color:#fff">Pre-annealed template hybridisation</a>
+                        </li>
+                        <li>
+                             <a href="#" style="color:#fff">Protein to trimer template</a>
+                        </li>
+                        <li>
+                             <a href="#" style="color:#fff">Protein to racquet template</a>
+                        </li>
+                    </ul>
+                <li>
+                     <a href="#" style="color:#fff">SUPPLEMENTARY DATA</a>
+                </li>
+            </ul>
+        </div>        
+    </div>
+</div>
+    
 <!--------------------------------------------------------------CSS AND SHIT-------------------------------------------------------------------->
       
 <style>
@@ -98,13 +148,87 @@
     #kinetics:hover {
         background-position: top;
     }  
+    
+    p {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
 </style>      
       
 <!--------------------------------------------------------------CONTENT AND SHIT---------------------------------------------------------------->
+         <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h4>INTRODUCTION</h4>
+                        <p>So all the components needed for making the Injectisome tip have been obtained. But how do we know we’ve actually made it?</p>
+                        <p>This is where binding kinetics comes in! With the use of biolayer interferometry, we can begin to characterise protein-protein and protein-DNA interactions. We can determine what kind of binding it is (i.e. is it cooperative?), how fast it is (i.e. what are the kon and koff rates), and what the binding affinity of each component is (i.e. what's the Kd value?).</p>
+                        <p>These aspects all add up to paint the beginnings of a portrait of self-assembly – one of Nature's greatest triumphs and mysteries! If we can begin to characterise even a part of this process, we can gain a much better understanding of the molecular processes that occur every day in all living things.</p>
+                        <div class="container" style="padding-top: 75px; padding-bottom: 20px">
+                <a id="kinetics" href="labbook_kinetics.html"></a>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+             <br>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h5>Biolayer Interferometry</h5>
+                        <p>So what is biolayer interferometry?</p>
+                        <p>It’s a label-free dip-and-read system which can measure interactions between proteins, peptides, nucleic acids, and lipids in real time. The technology is based on principle interactions between light waves [1].</p> 
+                        <p>The BLItz machine uses a glass fibre-based biosensor, where the surface chemistry occurs on the tip. White light is passed through the glass fibre and reflected back to the machine from two interfaces – interface between glass fibre and bio-compatible layer, and interface between surface chemistry and solution. These two reflections come from the same source, and therefore have the same wavelengths [2].</p>
+                        <p>When molecules bind to the biosensor surface, the path length of the wave from the interface between surface and solution will increase while the other remains unchanged. This causes a phase shift, and a change in interference patterns of all wavelengths. Similarly, dissociation causes a shift back to the in waves initial position. These can be read by the BLItz machine for real-time monitoring of molecular binding events occurring on the biosensor surface [2].</p>
+                    <p>This allows the generation of association and dissociation curves over time [3], and are therefore useful for measuring interactions between different molecules.</p>
+                        <br>
+                        <p>REFERENCES</p>
+                            <ul>
+                                <li>[1] Sultana, A., and Lee, J.E, <i>Measuring Protein-Protein and Protein-Nucleic Acid Interactions by Biolayer Interferometry</i>, Curr. Protoc. Protein Sci., 79:19.25.1-19.25.26 (2015)</li>
+                                <li>[2] Dayne, D., <i>Biolayer Interferometry (BLI) – How Does It Work?</i>, ForteBio Interactions, 5-1 (2012)</li>
+                                <li>[3] Buckle, P., <i>Kinetics on the Octet Systems: What Lies Beneath the Curves</i>, ForteBio, (2012)
+</li>
+                            </ul>
+                    </div> 
+                    <br>
+                </div>
+             </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h5>Biolayer Interferometry</h5>
+                        
+                        
+                    </div>            
+                </div>
+             </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h5>Biolayer Interferometry</h5>
+                        
+                        
+                    </div>            
+                </div>
+             </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h5>Biolayer Interferometry</h5>
+                        
+                        
+                    </div>            
+                </div>
+             </div>
+        </div>  
       
-<div class="container" style="padding-top: 75px; padding-bottom: 20px">
-        <a id="kinetics" href="labbook_kinetics.html"></a>
-</div>        
+      
+      
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
       
 <!--------------------------------------------------------------ACTUAL FOOTER------------------------------------------------------------------->
 
