@@ -92,37 +92,39 @@
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="#">
-                        Kinetics
+                        Imaging
                     </a>
                 </li>
                 <li>
                     <a href="#intro" style="color:#fff">INTRODUCTION</a>
                 </li>
+            
                 <li>
-                     <a href="#bli" style="color:#fff">BIOLAYER INTERFEROMETRY</a>
+                     <a href="#Results" style="color:#fff">RESULTS</a>
+                    <ul>
+                        <li>
+                             <a href="#SFI" style="color:#fff">Single Fluorophore Intensity</a>
+                        </li>
+                        <li>
+                             <a href="#NSB" style="color:#fff">Non-Specific Binding</a>
+                        </li>
+                    
+                    </ul>
                 </li>
-                <li>
-                     <a href="#results" style="color:#fff">KEY RESULTS</a>
+                                <li>
+                    <a href="#Conc" style="color:#fff">CONCLUSIONS</a>
+                </li>
+                </li>
+                                <li>
+                    <a href="#future" style="color:#fff">FUTURE WORK</a>
                 </li>
                 <li>
                     <a href="#matsnmets" style="color:#fff">MATERIALS AND METHODS</a>
+                    
                 </li>
-                    <ul>
-                        <li>
-                             <a href="#exp1" style="color:#fff">Monomer template hybridisaion</a>
-                        </li>
-                        <li>
-                             <a href="#exp2" style="color:#fff">Pre-annealed template hybridisation</a>
-                        </li>
-                        <li>
-                             <a href="#exp3" style="color:#fff">Protein to trimer template</a>
-                        </li>
-                        <li>
-                             <a href="#exp4" style="color:#fff">Protein to racquet template</a>
-                        </li>
-                    </ul>
+            
                 <li>
-                     <a href="#supps" style="color:#fff">SUPPLEMENTARY DATA</a>
+                     <a href="#ref" style="color:#fff">REFERENCES</a>
                 </li>
             </ul>
         </div>        
@@ -171,8 +173,11 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h4 id="intro" style="padding-top:75px">INTRODUCTION</h4>
-                        <p><!--STICK SHIT HERE--></p>
-                        <p><!--STICK SHIT HERE--></p>
+                       <p>Single molecule fluorescence microscopy studies were used to determine the number of sub-units that had bound to the artificial DNA scaffold. Individual sub-units were labelled with fluorophores, which allowed them to be visualised using a fluorescence microscope. These fluorophores eventually switch off, or photobleach in discreet steps. This allows us to count how many molecules are present by counting the number of photobleaching steps. In essence, this meant we could ‘see’ whether we had built the tip.</p>
+                                 <center>
+<img src="https://scontent.xx.fbcdn.net/hphotos-xft1/t31.0-8/12186390_10153773063657608_5020067853442767444_o.jpg">
+<p>Figure 1. Photobleaching events result in discreet steps on bleach trace. </p>
+                        </center>
                         <p><!--STICK SHIT HERE--></p>
 <div class="container" style="padding-top: 75px; padding-bottom: 20px">
         <a id="imaging" href="labbook_imaging.html"></a>
@@ -181,133 +186,270 @@
                         </div>    
                     </div>
                 </div>
-            </div>
+        
              <br>
+    <div id="page-content-wrapper">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h5 id="results" style="padding-top:75px">KEY RESULTS</h5>
-                        <p><!--STICK SHIT HERE--></p>
-                        <p><!--STICK SHIT HERE--></p>
-                        <p><!--STICK SHIT HERE--></p>
-                        <p><!--STICK SHIT HERE--></p>
-                        <p><!--STICK SHIT HERE--></p>
-                    </div>            
+                        <h4 id="Results" style="padding-top:75px">RESULTS</h4>
+                        <h5 id="SFI" style="padding-top:75px">Characterisation of Single Fluorophore Intensity</h5>
+
+<p>To determine how many fluorescent tip proteins have bound to a scaffold, we first had to know how bright one protein was. This was determined by subtracting the average intensity of one fluorophore from the average intensity of the background: </p>
+
+<p>This average was determined by fitting a Gaussian function on histograms depicting the intensity of many pixels consisting of background and single fluorophores (Figure 1 and 2)</p>
+                        
+                
+                           <center>
+<img src="https://scontent.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/10537024_10208389583243081_1516186807033683189_n.jpg?oh=e25062c85101928b92044dff4da6956c&oe=56C06988">
+
+<img src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xaf1/t31.0-8/s2048x2048/12182735_10153773043447608_4495248823323215969_o.jpg">
+<p>Figure 2. Gaussian fitted histogram (left) for initial intensities of dots chosen by spot finding algorithm at a high signal to noise ratio. Spots selected by the algorithm (right) can be visually confirmed to be true spots. </p>
+                        </center>
+                        
+                        
+                        <img src="https://scontent.xx.fbcdn.net/hphotos-xap1/t31.0-8/s2048x2048/12182875_10153773037517608_5740718972469808057_o.jpg">
+<p>Figure 3. Gaussian fitted histogram (left) for initial intensities of dots chosen by spot finding algorithm (right) at a very low signal to noise ratio. The majority of spots chosen by the algorithm are obviously not true spots and represent background intensities.</p> 
+                        
+                        
+                        
+                        
+                                       <center>
+<img src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xfa1/t31.0-8/1534825_10153773001877608_5845362264954120914_o.jpg">
+<img src="https://scontent.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/12038444_10208389606843671_9098629188435400872_n.jpg?oh=180f0eda2ff20d94b240e687d00df2cc&oe=56B62D04">
+
+<p>The mean intensity of a fluorophore was determined to be 1807, with a standard deviation of 1767.</p>	
+<p>It should be noted that the data is undersampled, as it consists of spot data from a single camera field of view, with approximately 25-75 real spots estimated to be observed. 
+</p>
+	
+                        </center>
+                        
+                   <p>It should be noted that the data is undersampled, as it consists of spot data from a single camera field of view, with approximately 25-75 real spots estimated to be observed. 
+</p>
+<p>It should be noted that the data is hugely undersampled, as it consists of spot data from a single camera field of view, with approximately 25-75 real spots estimated to be observed. 
+</p>    
+                        
+                        
+                   </div> 
+                        </div>    
+                    </div>
+                </div>                       
+                                       
+                        
+     <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        
+                        <h5 id="NSB" style="padding-top:75px">Characterisation of Non-Specific Binding to Surface</h5>
+
+<p>Proteins can tend to stick to glass coverslips where they can sometimes fall apart. So it is important to coat our coverslips to pacify them and prevent non-specific binding of fluorescent protein. To ensure that this surface chemistry was effective,  we tried to image fluorescent protein on surfaces passivated with PEG, PEG-Biotin and avidin (Figure 4). </p>
+
+
+<p>We were unable to get any good images of fluorescent monomer after we washed out our surface. This could indicate that non-specific interactions are quite low. This would mean any spots we see after washing out our surface are caused to fluorescent subunits attached to a scaffold. </p>
+
+                          <center>
+<img src= "https://scontent.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/11254160_10153772947147608_6456525816247456091_n.jpg?oh=fe5434e53dd07623b0002cc9621a2654&oe=568A260D">
+<p>Figure 4. Representative images of surface when 30nM of fluorescent monomer incubated for 2 minutes and then washed out. Low levels of fluorescent spots could indicate low non-specific binding levels. </p>  <center>
+
+<p>To determine whether specifically binding our DNA construction scaffold onto these surfaces could in contrast encourage tip proteins to stick to the surface of the cover slip for imaging. Solutions of the tennis racket scaffold were pre-incubated with fluorescent tip proteins before imaging (Figure 5).</p>
+
+  <center>
+<img src= "https://scontent.xx.fbcdn.net/hphotos-xlp1/v/t1.0-9/12038462_10153772966742608_2132830821341694670_n.jpg?oh=9b191002d6007b1ba8a22d3d751909bd&oe=56B9EE79">
+<p>Figure 5. Fluorescent particles from a solution of LcrV and “Tennis Racket” Scaffold. </p>
+<p>When the intensity of the spots was observed over time, the majority of the spots had either zero or one distinguishable bleaching step. Peak intensities within the two standard deviations of the expected value of a single fluorophore, indicating they were monomeric.   </p>  <center>
+
+<p>However, some spots had initial intensities that were many times higher than that of a single fluorophore and their intensity profiles contained multiple distinct bleach traces. This would indicate that multiple fluorophores had localised to that point (Figure 6).  </p>
+  <center>
+<img src= "https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xaf1/t31.0-8/12185026_10153772920812608_851989551070348183_o.jpg">
+<p>Figure 6. Representative example of an intensity profile. The dotted lines (green) represent the raw data, the bold blue line represents the data smoothed with a Cheung Kennedy filter to reduce noise. </p>  <center>
+
+<p>To determine with more accuracy the number of sub-units that had bound to the scaffold, a power spectrum was taken of the pair-wise distance distribution function of a filtered trace. The sharpest peak in the power spectrum that lied within 2 standard deviations of the mean single fluorophore intensity (see Table 1) was chosen as the most accurate marker for bleaching step size (Figure 7). </p>
+  <center>  <center>
+<img src= "https://scontent.xx.fbcdn.net/hphotos-xpa1/t31.0-8/12034476_10153772938922608_7258425758335254611_o.jpg">
+<p>Figure 7. The power spectrum (ECF) of the pairwise distribution density function for the filtered trace (blue) and unfiltered trace (green) in Figure X. The Y values represent the frequency of various step sizes present in the original trace. The peak at 1908 was chosen as the bleaching step size used to infer stoichiometry. It was the sharpest peak in the vicinity of the mean single fluorophore intensity and both the filtered and unfiltered trace ECF’s were coincident around that point. </p>  <center>
+
+<p>This step size was used to infer stoichiometry through the following:</p>
+  <center>
+<img src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/12036962_10208389654284857_8763399711019698231_n.jpg?oh=885a2f0152e4ec8b1401f23bd28e91bf&oe=56BE4048&__gda__=1455371319_3fae2961acde28b3c59eaf540d686f24">  <center>
+<p>This indicates that the particular spot has 5 sub-units colocalised at that location. Assuming that as per Section 2, non-specific binding between monomer and the surface is low, the spots that are observed here would result from monomers bound to a scaffold. </p>
+
+<p>This would indicate that for the observed trace, 5 tip proteins have bound to our artificial scaffold – in essence, that we’ve built the tip. An example bleach trace from what appears to be 5 fluorescent tip proteins is shown in Figure 8. </p>
+
+  <center>
+<img src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xla1/t31.0-8/12185224_10153772997157608_1567481061534823100_o.jpg">
+<p>Figure 8. Schematic illustrating the presence of 5 distinct bleach steps, of roughly 1800-2200 counts on the filtered trace.</p>  <center>
+
+<p>However, very few multimeric traces were observed, as shown in Figure 9. Many of the traces displayed significant noise, making it difficult to clearly identify distinct traces, or peaks on the ECF function. </p>
+
+  <center>
+<img src="https://scontent.xx.fbcdn.net/hphotos-xtf1/v/t1.0-9/12033085_10153772983067608_7038392253633491718_n.jpg?oh=2523807cf405c9f80284fb33998696e9&oe=568D098C">
+<p>Figure 9. Bar chart demonstrating the low yield of multimeric complexes, with approximately 5.5% (10/193) of complexes consisting of more than 1 subunit. </p>  <center>
+
+<p>This indicates a low conjugation yield of the fluorescent sub-units to the scaffold. It could also be a result of rapid dissociation of the complex upon dilution of the solution from incubation concentrations (100’s of nM) to the concentrations required for imaging (pM to low nM). </p>
+<p>This could be improved through the development of irreversible DNA-protein conjugation chemistries, which could generate greater yields in the future. This would form the basis for future work. </p>
+                        
+                        
+                        
+        
+                        
+                        </div> 
+                        </div>    
+                    </div>
+                </div>                       
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+
+         
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h4 id="Conc" style="padding-top:75px">CONCLUSION</h4>
+
+ <p>We were able to observe the presence of a number of multimeric complexes, which indicates colocalisation of fluorescent sub-units.</p>
+<p>However, the yield of multimeric complexes was low, particularly for the 5’mer complexes which would indicate formation of a “full tip”. This indicates that higher yield DNA-protein conjugation chemistries may be required to visualise complexes at single molecule concentrations.</p>
+<p> It cannot be said with certainty that the complexes were formed due to the presence of the scaffold and not random aggregation. This is due to lack of experimental certainty in our “non-specific interactions” experiment. The data was also undersampled, which didn’t allow for robust statistical analysis.</p>
+<p> Addressing these issues forms the basis for future work.</p>
+                      
+                        </div> 
+                        </div>    
+                    </div>
                 </div>
+    
+        
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h4 id="future" style="padding-top:75px">FUTURE WORK</h4>
+
+<p>Future work could involve:</p>
+
+<ol type="1">
+  <li>	Developing higher yield reaction chemistries to allow for more effective visualisation at single molecule concentrations. </li>
+  <li>	Determining the number of traces observed for scaffolds with a single binding site (or demonstrating that control of the number of binding sites results in control of number of sub-units bound)</li>
+  <li>	More precisely characterising non-specific interactions between protein and our surface. </li>
+<li>Determining whether the distribution of subunit stoichiometries (as per Figure 8) changes with different incubation conditions </li>
+</ol>  
+                      
+                        </div> 
+                        </div>    
+                    </div>
+                </div>
+    
+      
+      
+      
+      
+              <div id="page-content-wrapper">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
                         <h4 id="matsnmets" style="padding-top:75px">Materials and Methods</h4>
-                    </div>            
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h6 id="exp1" style="padding-top:75px"><!--EXPERIMENT NAME--></h6>
-                            <p><!--STICK SHIT HERE--></p>
-                            <p>
-                            <ol>
-                                <li>
-                                    <p><!--STEPS AND SHIT--></p>
-                                    <p></p>
-                                    <p></p>
-                                </li>
-                                <li>
-                                    <p><!--STEPS AND SHIT--></p>
-                                    <p></p>
-                                    <p></p>
-                                    <p></p>
-                                </li>
-                                <li>
-                                    <p><!--STEPS AND SHIT--></p>
-                                    <p></p>
-                                    <p></p>
-                                </li>
-                            </ol>
-                            </p>
-                    </div>            
+
+<h6>1. Determining Intensity of a Single Fluorophore</h6>
+
+Passivated PLL-PEGBIO cover slides with a layer of excess streptavidin (.02mg/ml) were used for this study. A solution of fluorescent protein was prepared at 68.7nM, flowed onto the tunnel slide and imaged immediately without any washing step.   
+During post-processing, single fluorophores were detected via a threshold signal to noise ratio, described in Image Analysis. The distribution of fluorescence intensities were fit to a Gaussian, providing the mean intensity and standard deviation of a single fluorophore.
+
+
+
+<h6>2. Characterisation of Non-Specific Binding to Pll-PEGBIO Neutravidin Surface</h6>
+
+<p>Passivated PLL-PEGBIO cover slides with a layer of excess neutravidin (.5mg/ml) were used for this study. Solutions of protein were prepared at 30nM and 3nM. They were flowed onto the tunnel slide, allowed to incubate for 2 minutes and then washed out. The slides were imaged immediately afterwards. </p>
+
+<h6>3. Preparation and Imaging of Assembled Complexes</h6>
+
+<p>Passivated PLL-PEGBIO cover slides with a layer of excess neutravidin (.5mg/ml) were used for this study. NiNTA conjugation chemistry was used to bind proteins to the scaffold to form complexes. The tennis racket scaffold and NTA DNA were annealed to form a strongly associated complex, with NTA at a 10x excess. Nickel and LcrV were added at a 10x of the NTA concentration in the annealed mixture. The solution was allowed to incubate for 5-10 minutes.  </p>
+
+<p>Solution was flowed into the slide at concentrations of 30nM & 3nM and then washed out after an incubation of 2 minutes, to allow for biotin streptavidin interactions to occur. The solution was then imaged immediately.  </p>
+
+<h6>4.Fluorescence Microscopy, Image Acquisition and Photobleaching:</h6>
+<p>A custom built TIRF microscope was used for this study. This allowed for selective visualisation of the area approximately 100nM above the glass surface by avoiding illuminating dirt and other “junk” existing past the surface. An excitation wavelength of 488nM was primarily used. </p>
+<p>Emission was imaged at 100nM per pixel by an electron multiplying CCD camera (Andor Technology). Images were taken at an exposure time of 300ms and an electron multiplying gain of 300. The laser pulse intensity was standardised at 75mW. The laser and capture settings used for various experiments are as follows:</p>
+
+<ol type="1">
+  <li>	Experiment 1: 300ms exposure, 300ms 488 laser pulse, 100 frames</li>
+  <li>	Experiment 2: 300ms exposure, 300ms 488 laser pulse, 400 frames.</li>
+  <li>	Experiment 3: 300ms exposure, .2s 488 laser pulse, 480 frames </li>
+</ol>  
+
+<h6>5. Slide Preparation:</h6>
+
+<p>Cover slides were prepared with a passivated PLL-PEGBIO surface to prevent non-specific interactions with the glass surface from occurring. Tunnel slides were prepared by attaching a glass cover slide to a 1mm thick microscopy slide using two strips of double sided tape. A “tunnel” was left in between two strips of tape to allow solution to flow through. An excess layer of avidin (neutravidin at .5mg/ml or streptavidin at .02mg/ml) was used to allow for specific binding of scaffolds to the surface. </p>
+
+<h6>6. Protein Labeling:</h6>
+
+<p>As outlined in protein engineering and production, LcrV was labelled using Alexa488 fluorophore dye. The labelling efficiency could not be accurately determined, but was reported to be above 100% due to the lack of sensitivity of detection instruments. </p>
+
+<h6>7. Image Processing:</h6>
+<p>Images were analysed in MATLAB to determine to size and number of individual photobleaching steps. </p>
+
+	<h6>7.1. Spot Finding Algorithm</h6>
+<p>The mean pixel intensity of the first 50 frames of an image was used to find regions of high intensity corresponding to fluorophores. 3x3 pixel patches were extracted at those locations [2]. Patches were selected at various signal to noise ratio thresholds, where the threshold was given by: </p>
+<img src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xpt1/v/t1.0-9/12108127_10208389888810720_2245657677554436441_n.jpg?oh=81b509f4b14d61257ce12a825359984c&oe=568B2A49&__gda__=1455981376_39480896860bf1bbd4e79b60c347aac1">
+<p>This was used to sort the patches, where any patches that fell below a set threshold were discarded. </p>
+	<h6>7.2. Obtaining Traces and Filtering </h6>
+<p>The maximum pixel intensity in each patch was plotted against time (the frame of the image) to obtain photobleaching traces. To normalise the traces and obtain smoother curves, Cheung-Kennedy forward and backward nonlinear filtering was applied [3]. </p>
+	<h6>7.3 Bleaching step size determination using ECF</h6>
+<p>To determine the step size and infer stoichiometry of imaged complexes. The step size corresponding to a single photobleaching step can be evaluated through calculation of the power spectrum of the empirical characteristic function (ECF) of the pairwise difference density function (PDDF) of the trace.  The PDDF is the pairwise difference between all points in a trace [2].</p>
+<p>The sharpest peak of the power spectrum, or the sharpest peak within a range, corresponds to the step size. The stoichiometry is then calculated as the difference between max and background intensity divided by step size.  </p>
+                      
+                        </div> 
+                        </div>    
+                    </div>
                 </div>
     
-                </div>
+    
+    
+     <div id="page-content-wrapper">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h6 id="exp2" style="padding-top:75px"><!--EXPERIMENT NAME--></h6>
-                            <p><!--STICK SHIT HERE--></p>
-                            <p>
-                            <ol>
-                                <li>
-                                    <p><!--STEPS AND SHIT--></p>
-                                    <p></p>
-                                    <p></p>
-                                </li>
-                                <li>
-                                    <p><!--STEPS AND SHIT--></p>
-                                    <p></p>
-                                    <p></p>
-                                    <p></p>
-                                </li>
-                                <li>
-                                    <p><!--STEPS AND SHIT--></p>
-                                    <p></p>
-                                    <p></p>
-                                </li>
-                            </ol>
-                            </p>
-                    </div>            
+                        <h4 id="ref" style="padding-top:75px">REFERENCES</h4>
+
+<p>1. Leake, M. C., Chandler, J. H., Wadhams, G. H., Bai, F., Berry, R. M., & Armitage, J. P. (2006). Stoichiometry and turnover in single, functioning membrane protein complexes. Nature, 443(7109), 355-358.</p>
+
+	
+<p>2. Baker, M. A., Rojko, N., Cronin, B., Anderluh, G., & Wallace, M. I. (2014). Photobleaching reveals heterogeneous stoichiometry for equinatoxin II oligomers. Chembiochem, 15(14), 2139-2145.</p>
+
+<p>3. Chung, S. H., & Kennedy, R. A. (1991). Forward-backward non-linear filtering technique for extracting small biological signals from noise. Journal of neuroscience methods, 40(1), 71-86. </p>
+
+                      
+                        </div> 
+                        </div>    
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h6 id="exp3" style="padding-top:75px"><!--EXPERIMENT NAME--></h6>
-                            <p><!--STICK SHIT HERE--></p>
-                            <p>
-                            <ol>
-                                <li>
-                                    <p><!--STEPS AND SHIT--></p>
-                                    <p></p>
-                                    <p></p>
-                                </li>
-                                <li>
-                                    <p><!--STEPS AND SHIT--></p>
-                                    <p></p>
-                                    <p></p>
-                                    <p></p>
-                                </li>
-                                <li>
-                                    <p><!--STEPS AND SHIT--></p>
-                                    <p></p>
-                                    <p></p>
-                                </li>
-                            </ol>
-                            </p>
-                    </div>            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
                 </div>
-                 <div class="row">
-                    <div class="col-lg-12">
-                        <h6 id="exp3" style="padding-top:75px"><!--EXPERIMENT NAME--></h6>
-                            <p><!--STICK SHIT HERE--></p>
-                            <p>
-                            <ol>
-                                <li>
-                                    <p><!--STEPS AND SHIT--></p>
-                                    <p></p>
-                                    <p></p>
-                                </li>
-                                <li>
-                                    <p><!--STEPS AND SHIT--></p>
-                                    <p></p>
-                                    <p></p>
-                                    <p></p>
-                                </li>
-                                <li>
-                                    <p><!--STEPS AND SHIT--></p>
-                                    <p></p>
-                                    <p></p>
-                                </li>
-                            </ol>
-                            </p>
-                    </div>            
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h5 id="supps" style="padding-top:75px">Supplementary data</h5>
-                            <p><a href="">SUPP.DATA.PDF</a></p>
+      
+     
                     </div>            
                 </div>
              </div>
