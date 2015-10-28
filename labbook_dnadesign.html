@@ -98,22 +98,41 @@
                     <a href="#intro" style="color:#fff">INTRODUCTION</a>
                 </li>
                 <li>
-                     <a href="#results" style="color:#fff">METHODS AND RESULTS</a>
+                     <a href="#design" style="color:#fff">DNA DESIGNS</a>
                 </li>
                     <ul>
                         <li>
-                             <a href="#result1" style="color:#fff">Linear Scaffold</a>
+                             <a href="#design1" style="color:#fff">Linear Scaffold</a>
                         </li>
                         <li>
-                             <a href="#result2" style="color:#fff">Racquet Scaffold</a>
+                             <a href="#design2" style="color:#fff">Racquet Scaffold</a>
                         </li>
                         <li>
-                             <a href="#result3" style="color:#fff">Puckered Scaffold</a>
+                             <a href="#design3" style="color:#fff">Puckered Scaffold</a>
                         </li>
-                        <li>
-                             <a href="#result4" style="color:#fff">How we know we made it</a>
-                        </li>
+                      
                     </ul>
+                   <li>
+                     <a href="#results" style="color:#fff">RESULTS</a>
+                </li>
+                    <ul>
+                        <li>
+                             <a href="#result1" style="color:#fff">Agarose Gels</a>
+                        </li>
+                        <li>
+                             <a href="#result2" style="color:#fff">AFM and TEM Imaging</a>
+                        </li>
+                        <li>
+                             <a href="#result3" style="color:#fff">SAXS Solution Structure</a>
+                        </li>
+                      
+                    </ul>
+                <li>
+                    <a href="#conc" style="color:#fff">CONCLUSIONS</a>
+                </li>
+                <li>
+                    <a href="#future" style="color:#fff">FUTURE DESIGNS</a>
+                </li>
                 <li>
                     <a href="#matsnmets" style="color:#fff">MATERIALS AND METHODS</a>
                 </li>
@@ -127,9 +146,7 @@
                         <li>
                              <a href="#exp3" style="color:#fff">Testing Methods</a>
                         </li>
-                        <li>
-                             <a href="#exp4" style="color:#fff">Future Designs</a>
-                        </li>
+                        
                     </ul>
             </ul>
         </div>        
@@ -171,54 +188,69 @@
       
       
 <!--------------------------------------------------------------CONTENT AND SHIT---------------------------------------------------------------->
-         <div id="page-content-wrapper">
+    <div class="container" style="padding-top: 75px; padding-bottom: 20px">
+</div>       
+                    <a id="dnadesign" href="labbook_dnadesign.html"></a>
+        
+    
+    <div id="page-content-wrapper">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
                         <h4 id="intro" style="padding-top:75px">INTRODUCTION</h4>
                         <p>How do you build the world’s smallest construction scaffold from DNA?</p>
                         <p>In order to build the tip complex, the T3SS has a needle filament that is thought to act as a construction scaffold. This puts 5 tip protein subunits into the correct arrangement for them to self-assemble. To create the tip complex artificially, we’re building the world’s smallest construction scaffolds from DNA. These were designed to mimic the T3SS needle filament that could be chemically functionalised with 5 protein binding sites with the correct spatial arrangement.</p>
-<div class="container" style="padding-top: 75px; padding-bottom: 20px">
-        <a id="dnadesign" href="labbook_dnadesign.html"></a>
-</div>       
+
                         </div> 
-                        </div>    
+                        </div>  
+                
+                
                     </div>
-             <br>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h5 id="results" style="padding-top:75px">KEY RESULTS</h5>         
+                        <h4 id="design" style="padding-top:75px">DNA Scaffold Design</h4>         
                 </div>
+                 </div>
+                
                 <div class="row">
                     <div class="col-lg-12">
-                        <h6 id="result1" style="padding-top:75px">Linear Scaffold</h6>
-                            <p>The linear scaffold is a 50 base pair length single-stranded DNA template. Primarily used in Blitz, it contains three different ‘domains’ with which function is changed. The 5 prime end is modified with biotin for attachment to a streptavidin surface. A central binding domain consisting of 10 base pairs allows attachment to a complementary modified strand in the middle of the template. The modification was chosen depending on the test used, such as a 5 prime Tris Aminated modification for protein to DNA conjugation. 20 base pairs either side are non-complementary to any other strands, and are thus termed non-binding.</p>
+                        <h5 id="design1" style="padding-top:20px">Linear Scaffold</h5>
+                        <p>The linear scaffold is a 50 base pair length single-stranded DNA template. Primarily used in Blitz, it contains three different ‘domains’ with which function is changed. The 5 prime end is modified with biotin for attachment to a streptavidin surface. A central binding domain consisting of 10 base pairs allows attachment to a complementary modified strand in the middle of the template. The modification was chosen depending on the test used, such as a 5 prime Tris Aminated modification for protein to DNA conjugation. 20 base pairs either side are non-complementary to any other strands, and are thus termed non-binding.</p>
+                     
+                    
+                      
                     </div>            
                 </div>
-    
                 </div>
+        <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h6 id="result2" style="padding-top:75px">Tennis Racquet</h6>
+                        <h5 id="design2" style="padding-top:20px">Tennis Racquet</h5>
                         <p>NUPACK algorithim; Nucleic acid sequence design via efficient ensemble defect optimization was utilised in designing a ‘tennis racquet’ like flat DNA design. The racquet was ordered such that the 5’ end was biotinylated, allowing for conjugation to a streptavidin surface. Ten base pair single stranded DNA (ssDNA) was ordered with complementary sequence to the binding domain. This ten base pair ssDNA is the conjugating strand and was made with to be 5’ or 3’ Tris Aminated. (Check out <a href="labbook_conjugation.html">Conjugation Chemistry</a> to find out more). Here’s our NUPACK code! </p>
                             <ul>
-                                <li>material = dna</li>
-                                <li>structure tennisracket = D20(U62)</li>
-                                <li>domain stem = N20</li>
-                                <li>domain binding = CCGTCCTGCC</li>
-                                <li>domain nonbinding = TT</li>              
+                                <li><p>material = dna</p></li>
+                                <li><p>structure tennisracket = D20(U62)</p></li>
+                                <li><p>domain stem = N20</p></li>
+                                <li><p>domain binding = CCGTCCTGCC</p></li>
+                                <li><p>domain nonbinding = TT</p></li>    
+                                  </li><p>tennisracket.seq = stem nonbinding binding nonbinding binding nonbinding binding nonbinding binding nonbinding binding nonbinding stem*</p>
                             </ul>
+                         
+                        <p>This scaffold was primarily used in understanding binding kinetics! You can check this out <a href="labbook_kinetics.html">here</a>. </p>  
+                        
+                        
                         <center><img src="images/dnatemplatefig1.jpg">
                             <p>Figure 1. Tennis Racquet design</p>
                         </center>
-                        <p>tennisracket.seq = stem nonbinding binding nonbinding binding nonbinding binding nonbinding binding nonbinding binding nonbinding stem*</p>
-                        <p>This scaffold was primarily used in understanding binding kinetics! You can check this out <a href="labbook_kinetics.html">here</a>. </p>
+                     
+                        
+                      
                     </div>            
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <h6 id="result3" style="padding-top:75px">Puckered Barrel</h6>
+                        <h5 id="design3" style="padding-top:20px">Puckered Barrel</h5>
                                                     <p>DNA barrels have previously been made with single walls. We designed barrels with a puckered wall to appropriate the structure’s end to the size required by the tip complex.</p> 
                         <p>Initially, staple crossovers and potential crossover sites for each barrel were designed using an algorithm by our team. Our problem poses a significant design challenge, as the T3SS tip complex has an odd numbered rotational symmetry. Puckered walls allow both odd numbered rotational symmetry, but also smaller diameters, which is perfect for our miniscule tip complex!</p>
                         <p>The hanging M13 scaffold (of which approximately 180 base pairs exists) was made to hang from the centre of a beta barrel. It was placed here to position it in the most unlikely location for interaction with either end of the barrel.</p>
@@ -226,48 +258,113 @@
                         <center><img src="images/dnatemplatefig2.jpg">
                             <p>Figure 2. Different views of puckered barrel</p>
                         </center>
-                        <p>CADNANO was used to draw out the crossovers onto the M13 scaffolds strand. Once all staples had been drawn out at the correct crossover, staple ends were designed.</p>
-                        <center><img src="images/dnatemplatefig3.jpg.jpg">
+                        
+                        
+                                               <h6 id="Cadnano" style="padding-top:20px">CaDNAno</h5>
+
+                        <p>CaDNAno was used to draw out the crossovers for our <a href="images/dnadesignPuckered10merjson.json">puckered design</a> and thread them over the M13 scaffold strand. Once all staples for the body of the barrel had been drawn out with the correct crossovers, our staple ends were designed.</p>
+                         <br>
+                         <br>
+                        <center><img src="images/dnatemplatefig3.jpg" width="800">   <p>Figure 3: Our puckered DNA barrel design drawn out in CaDNAno</p>
                         </center>
-                        <p>End staples were designed to allow for 4 different conjugation orientations:</p>
+                         <br>
+                         <br>
+                        
+                        
+                        
+                        
+                        <p>We designed "adaptor" oligos to replace the very end staples of each helix which have a 'staple' domain that is complimentry to M13 and one of two different 'conjugation' domains are complimentary to the our protein conjugation modified oligos. By synthesizing our barrel with different sets of adaptor oligos our design allows the creation of two different scaffold diameters and two different conjugation orientations (Figure 4)</p>
                             <ol>
-                                <li>Alpha barrel direct</li>
-                                <li>Alpha barrel folded</li>
-                                <li>Beta barrel direct</li>
-                                <li>Beta barrel folded</li>
+                                <li><p>Alpha barrel direct: Inner helicies, outward oriented conjugcation points</p></li>
+                                <li><p>Alpha barrel folded: Inner helicies, inward oriented conjugcation points</p></li>
+                                <li><p>Beta barrel direct: Outer helicies, outward oriented conjugcation points</p></li>
+                                <li><p>Beta barrel folded: Outer helicies, inward oriented conjugcation points</p></li>
                             </ol>
-                        <p>Barrels are made of two layers of barrel wall. The outer layers are referred to as beta barrels, with the inner being referred to as alpha. We also created many staple extensions to functionalise the barrel in alignment with our testing techniques.</p>
-                        <center><img src="images/dnatemplatefig3.jpg.jpg">
-                            <p>Barrels are made of two layers of barrel wall. The outer layers are referred to as beta barrels, with the inner being referred to as alpha. We also created many staple extensions to functionalise the barrel in alignment with our testing techniques.</p>
+           <br>
+                         <br>
+                        <center><img src="images/dnatemplatefig4.jpg">
+                            <p>Figure 4: Schematic of the four different arrangments of conjugation chemistries possible using different adaptor sets. </p>
                         </center>
-                        <p>Barrels are made of two layers of barrel wall. The outer layers are referred to as beta barrels, with the inner being referred to as alpha. We also created many staple extensions to functionalise the barrel in alignment with our testing techniques.</p>
+                  
                     </div>
                 </div>            
-                 <div class="row">
+     
+                
+                
+                
+                
+                
+                
+                <div class="row">
                     <div class="col-lg-12">
-                        <h6 id="result4" style="padding-top:75px">How we know we made it</h6>
-                            <p>
-                            <ol>
-                                <li>
-                                    <p>Agarose gel electrophoresis</p>
-                                    </p>This was our first indication that our design was on track because it showed that our staple and scaffold strands were binding to each other! This was indicated because of the clear difference between m13 and staple only lanes in comparison to full DNA origami mixed lanes!</p>
-                                </li>
-                                <li>
-                                    <p>TEM/AFM</p>
-                                    <p>To make sure our DNA had formed the right shape, we visualised these with AFM and EM. These two methods allowed us to clearly see our tiny construction scaffold, which had dimensions that were consistent with our design.</p>
-                                    <center><img src="images/dnadesignfig1.jpg"><p>Figure 1: AFM image of "Hero Barrels"</p></center>
-                                    <center><img src="images/dnadesignfig2.jpg"><p>Figure 2: EM image of "Hero Barrels"</p></center>
-                                </li>
-                                <li>
-                                    <p>SAXS</p>
-                                    <p>AFM and EM only let us see our nanostructures when they’re stuck to a surface. Occasionally the surface itself and the AFM tip can affect the nanostructures’ shape, which may be why our barrels looked slightly flat with AFM. It was important for us to know whether our structures were round barrels in solution. In order for us to obtain this data, we took our nanostructured to the Australian synchrotron, where we were able to characterise our DNA nanostructures with small-angle X-ray scattering (SAXS). By comparing our experimental scattering data with an array of structural models, each with different diameters (Figure 3), we were able to estimate the dimensions of our DNA nanostructure in solution. These were consistent with our design, but the fit to our X-ray scattering data is far from perfect. This could be for several reasons. Firstly, the DNA in solution will not be a static rigid structure like our structural models. Secondly, our sample may not have been 100% pure during our SAXS measurements. Both would flatten the pronounced diffraction bumps, of which we can see in theoretical data (Figure 4).</p>
-                                                                        <center><img src="images/dnadesignfig4.jpg"><p>Figure 3: Plot showing fit between theoretical models with various diameters and experimental small-angle X-ray scattering data.</p></center>
-                                    <center><img src="images/dnadesignfig5.jpg"><p>Figure 4: Comparison of theoretical scattering calculated from a structural model of the DNA nanostructure with a diameter of 9.5 nm (blue) and experimental small-angle X-ray scattering (black). Errors are twice the standard error of the mean.</p></center>
+                        <h4 id="results" style="padding-top:75px">Results</h4>
+                        
+                           
+                                
+                            <h5 id="result1" style="padding-top:20px">Agarose Gel Electrophoresis</h5>
+                                    <p>This was our first indication that our design was on track because it showed that our staple and scaffold strands were binding to each other! This was indicated because of the clear difference between m13 and staple only lanes in comparison to full DNA origami mixed lanes (Figure 7)!!</p>
+                               
+                
+                                    <center><img src="images/dnadesignGEL.jpg">
+                            <p>Figure 7: 0.75% agarose gel of Puckered and Unpuckered DNA barrels and M13 scaffold DNA</p>
+                        </center>
+                  
+                
+                         <h5 id="result2" style="padding-top:20px">AFM and TEM Imaging</h5>
+                                    <p>To make sure our DNA had formed the right shape, we visualised these with AFM (Figure 6) and TEM (Figure 7). These two methods allowed us to clearly see our tiny construction scaffold, which had dimensions that were consistent with our design: Approximately 210nm long.</p> <br>
+                                    <center><img src="images/dnadesignfig1.jpg" width="800"><p>Figure 6: AFM image of "Hero Barrels"</p></center>
+                         <br>
+                         <br>
+                         <br>
+                                    <center><img src="images/dnadesignfig2.jpg" width="700"><p>Figure 7: EM image of "Hero Barrels"</p></center>
+                                
+                        <h5 id="result3" style="padding-top:75px">Small Angle X-ray Scattering (SAXS) Solution Structure</h5>
+                                    <p>AFM and EM only let us see our nanostructures when they’re stuck to a surface. Occasionally the surface itself and the AFM tip can also affect the nanostructures’ shape, which may be why our barrels looked slightly flat with AFM. It was important for us to know whether our structures were round barrels in solution. In order for us to obtain this data, we took our nanostructure to the Australian Synchrotron, where we were able to characterise our DNA nanostructures with Small-Angle X-ray Scattering (SAXS). </p>
+                        <p> By comparing our experimental scattering data with an array of structural models, each with different diameters (Figure 8), we were able to estimate the dimensions of our DNA nanostructure in solution. These were consistent with our design, but the fit to our X-ray scattering data is far from perfect. This could be for several reasons. Firstly, the DNA in solution will not be a static rigid structure like our structural models. Secondly, our sample may not have been 100% pure during our SAXS measurements. Both would flatten the pronounced diffraction bumps compared to those seen in an idealized theoretical scattering pattern (Figure 9).</p>
+                         <br>
+                                                                        <center><img src="images/dnadesignfig4.jpg" width="500"><p>Figure 8: Plot showing fit between theoretical models with various diameters and experimental small-angle X-ray scattering data.</p></center>
+                         <br>
+                        <br>
+                        
+                                    <center><img src="images/dnadesignfig5.jpg" width="500"><p>Figure 9: Comparison of theoretical scattering calculated from a structural model of the DNA nanostructure with a diameter of 9.5 nm (blue) and experimental small-angle X-ray scattering (black). Errors are twice the standard error of the mean.</p></center>
                                 </li>
                             </ol>
                             </p>
                     </div>
-      
+      <div class="container-fluid">
+            <div class="row">
+                    <div class="col-lg-12">
+                        <h4 id="conc" style="padding-top:75px">Conclusions</h4>
+                        <p>We've designed 2 DNA Scaffolds for assembling the T3SS Needle Tip Complex acording to the specificaitons layed out in our Bioblueprint, and demonstrated that they are of the correct dimentions required, using AFM, EM, and SAXS!! <br>
+                            <h6>Now were ready to anchor our proteins to them!!!</h6>
+                      
+                     
+                    </div>
+ </div>
+    
+    
+                     <div class="row">
+                    <div class="col-lg-12">
+                        <h4 id="future" style="padding-top:75px">Future Designs</h4>
+                                                            <p>Following successful design of the barrel and the tennis racquet we aimed to design new scaffolds that could alleviate other issues with isolating complex protein structures. Two particular methods come to mind, and both were aimed at scaffolding the T3SS tip complex. The first design idea was of a designing a pentagonal tessellating surface, which would create a surface with which many tips could form on one DNA origami scaffold. </p>
+                                    <p>Pentagons don't tesselate well in two dimentions! So for our second and perhaps more ambitious design we considered 3D shapes that have some petameric symmetry such as dodecahedrons, which are made of pentagons and have 5 fold symmetry on each face, and icosahedrons which have five fold symmetry around their verticies. We used vHelix to design a DNA icosahedron (Figure 10) that, modified with protein conjugation sites surrounding each vertex, would allow the assembly of 12 T3SS tip complex (Figure 11) for each DNA scaffold. Value!</p> <br>
+                                 
+                                    <center><img src="images/dnadesignfig7.jpg" width="600">   <p>Figure 10: vHelix design of a DNA Icosahedron</p></center>
+                        <br> 
+                         <br>
+                         <center><img src="images/icosahedron.gif"><p>Figure 11: Rendition of T3SS needle tip complexes assembed on an icosahedral scaffold</p></center>
+                                </li>
+                      
+                     
+                    </div>
+ </div>
+    
+    
+    
+    
+    
+    
+    
                 <div class="row">
                     <div class="col-lg-12">
                         <h4 id="matsnmets" style="padding-top:75px">Materials and Methods</h4>
@@ -275,7 +372,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <h6 id="exp1" style="padding-top:75px">Creating staple mixes</h6>
+                        <h6 id="exp1" style="padding-top:20px">Creating staple mixes</h6>
                             <p>Resuspension (COMMON staple mix)</p>
                             <p>
                             <ol>
@@ -306,7 +403,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <h6 id="exp2" style="padding-top:75px">Synthesis</h6>
+                        <h6 id="exp2" style="padding-top:20px">Synthesis</h6>
                             <p>M13 Buffer Exchange</p>
                             <p>
                             <ol>
@@ -341,7 +438,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <h6 id="exp3" style="padding-top:75px">Testing Methods</h6>
+                        <h6 id="exp3" style="padding-top:20px">Testing Methods</h6>
                         <p>Agarose Gel</p>
                                 <li>
                                     <p>Agarose was dissolved to a final concentration of 1% (w/v) in 1x TAE (Biorad) and pre-stained with a drop of RedsafeTM nucleic acid staining solution. The samples were mixed with New Englands Biolabs 6x Gel loading dye and undergone electrophoresis for approximately 30 minutes at 120V. The gel was visualised under UV light post electrophoresis.</p>
@@ -362,22 +459,7 @@
                             </p>
                     </div>            
                 </div>
-                 <div class="row">
-                    <div class="col-lg-12">
-                        <h6 id="exp4" style="padding-top:75px">Future Designs</h6>
-                            <p>vHelix</p>
-                            <p>
-                            <ul>
-                                <li>
-                                    <p>Following successful design of the barrel and the tennis racquet we aimed to design new scaffolds that could alleviate other issues with isolating complex protein structures. Two particular methods come to mind, and both were aimed at scaffolding the T3SS tip complex. The first design idea was of a pentagonal tessellating surface, and was aimed at creating a surface with which many tips could form. This doesn’t limit the amount of tips forming on 1 scaffold to 2.
-                                    <p>The second and perhaps more ambitious was that of a DNA ball with multiple binding sites at vertices on its surface.</p>
-                                    <p>Check out the Staples</p>
-                                    <center><img src="images/dnadesignfig7.jpg"</center>
-                                    <p><center><img src="images/dnadesignfig8.jpg"</center></p>
-                                </li>
-                            </ol>
-                            </p>
-                    </div>
+</div>
 
 
       

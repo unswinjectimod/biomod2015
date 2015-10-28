@@ -99,10 +99,16 @@
                     <a href="#intro" style="color:#fff">INTRODUCTION</a>
                 </li>
                 <li>
-                     <a href="#bli" style="color:#fff">BIOLAYER INTERFEROMETRY</a>
+                     <a href="#bli" style="color:#fff">BLITZ</a>
                 </li>
                 <li>
-                     <a href="#results" style="color:#fff">KEY RESULTS</a>
+                     <a href="#results" style="color:#fff">RESULTS</a>
+                </li>
+                 <li>
+                     <a href="#Conc" style="color:#fff">CONCLUSION</a>
+                </li>
+                 <li>
+                    <a href="#Future" style="color:#fff">FUTURE WORK</a>
                 </li>
                 <li>
                     <a href="#matsnmets" style="color:#fff">MATERIALS AND METHODS</a>
@@ -162,17 +168,20 @@
 </style>      
       
 <!--------------------------------------------------------------CONTENT AND SHIT---------------------------------------------------------------->
-         <div id="page-content-wrapper">
+    <div class="container" style="padding-top: 75px; padding-bottom: 20px">
+                       <a id="kinetics" href="labbook_kinetics.html"></a>
+
+</div>    
+    
+    <div id="page-content-wrapper">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h4 id="intro" style="padding-top:75px">INTRODUCTION</h4>
+                        <h4 id="intro" style="padding-top:75px">Introduction</h4>
                         <p>So all the components needed for making the Injectisome tip have been obtained. But how do we know we’ve actually made it?</p>
                         <p>This is where binding kinetics comes in! With the use of biolayer interferometry, we can begin to characterise protein-protein and protein-DNA interactions. We can determine what kind of binding it is (i.e. is it cooperative?), how fast it is (i.e. what are the kon and koff rates), and what the binding affinity of each component is (i.e. what's the Kd value?).</p>
                         <p>These aspects all add up to paint the beginnings of a portrait of self-assembly – one of Nature's greatest triumphs and mysteries! If we can begin to characterise even a part of this process, we can gain a much better understanding of the molecular processes that occur every day in all living things.</p>
-                        <div class="container" style="padding-top: 75px; padding-bottom: 20px">
-                <a id="kinetics" href="labbook_kinetics.html"></a>
-                        </div>    
+                        
                     </div>
                 </div>
             </div>
@@ -180,7 +189,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h5 id="bli" style="padding-top:75px">Biolayer Interferometry</h5>
+                        <h4 id="bli" style="padding-top:75px">BLITZ:Biolayer Interferometry</h4>
                         <p>So what is biolayer interferometry?</p>
                         <p>It’s a label-free dip-and-read system which can measure interactions between proteins, peptides, nucleic acids, and lipids in real time. The technology is based on principle interactions between light waves [1].</p> 
                         <p>The BLItz machine uses a glass fibre-based biosensor, where the surface chemistry occurs on the tip. White light is passed through the glass fibre and reflected back to the machine from two interfaces – interface between glass fibre and bio-compatible layer, and interface between surface chemistry and solution. These two reflections come from the same source, and therefore have the same wavelengths [2].</p>
@@ -201,9 +210,11 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h5 id="results" style="padding-top:75px">KEY RESULTS</h5>
+                        <h4 id="results" style="padding-top:75px">Results</h4>
                         <p>We used a racquet DNA design containing five binding sites to act as a potential scaffold for the protein to bind to. Using NTA-to-His-tag conjugation chemistry, we were able to successfully observe binding of proteins to the DNA template. The rates of association and dissociation for binding of proteins to the racquet (5 binding site), and binding of proteins to a monomer template (1 binding site) were calculated, and are summarised in Figures 1.1, 1.2 and 1.3.</p>
-                        <center><p><img src="images/kinetics_table1.2.png"><img src="images/kinetics_table1.2.png"><img src="images/kinetics_table1.3.png"></p></center>
+                        <center><img src="images/kinetics_table1.1.png"></center>
+                        <center>    <img src="images/kinetics_table1.2.png"></center>
+                          <center>  <img src="images/kinetics_table1.3.png"></p></center>
                         <p>When a single exponential decay curve was fitted to the monomer template, it showed clear 1-to-1 fit. However, a single exponential decay curve did not fit to the racquet template data. A double exponential curve improved the fit, indicating that the interaction between the proteins and the racquet were no longer 1-to-1. As seen in the figures above, there were two calculated rates - a significantly faster rate compared to the monomer, and a slow rate.</p>
                         <p>The slower dissociation rate (k_off) for the racquet data is indicative of cooperativity, in which we would expect a slower rate of release from the template due to increased protein-protein interactions, created by the colocalisation of proteins by the racquet. The faster rate is ambigious, but may be indicative of direct protein-protein interactions between LcrVs, which would be expected to be signficantly weaker without the aid of a scaffold. The direct comparison of association and dissociation rates for LcrV to racquet protein can be seen in Figure 1.4.</p>
                         <center><p><img src="images/kinetics_table1.4.png"></p></center>
@@ -211,6 +222,39 @@
                         <p>Within the scope of the experiment, reliable protocols for use of biolayer interferometry in DNA-DNA and DNA-protei interactions have been documented as well, with confidence in their ability to produce replicable results. The intermediate steps for calculation and characterisation of the kinetics of 10bp NTA DNA to monomer and single protein to monomer template were also carried out with success.</p>
                     </div>            
                 </div>
+                
+                
+                
+                <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h4 id="Conc" style="padding-top:75px">Conclusions</h4>
+                        <p>We've optimized and performed experiments measuring the binding of the T3SS Tip protein LcrV onto our DNA scaffolds IN REAL TIME! </p>
+                        <p>This has allowed us to demonstrate the success of our DNA-protein conjugation system and measure the kintetics  of conjugation for this protein.  </p> 
+                        <p>By saturating the DNA scaffold binding sites with protein we have directed their location into the arrangement layed out in the bioblueprint and the slower disaccoiation rate of proteins from the assembly scaffold vs the single binding site linear  scaffold is a promising indication that there are protein-protein interactions occuring and the complex may cooperatively assembling.   </p>
+                            <br>
+                            <h6>DID WE DO IT? Did We Assemble the T3SS Tip Complex on a DNA scaffold!?!?</h6>
+                        
+          
+                    </div> 
+                    <br>
+                </div>
+             </div>
+                
+      <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h4 id="Future" style="padding-top:75px">Future Work</h4>
+                        <p>Well, maybe..</p><br>
+                        <p>The results so far certainly look promising! The next step will be to perform the same experiments with a negative control protein that does not have purposefull protein-protein interaction such as GFP to ensure that the slower dissacciation of tip proteins on a scaffold are truely the effect of cooperative binding.</p><p> Additionally, we can return to our bioblueprint models and design a series of location-specific crosslinking mutants to check the orientations of tip proteins on the scaffold. If we can crosslink the proteins on a scaffol and stabilize the complex should be able to confirm stochiometry and begin structural investigation with Cryo-TEM and X-ray crystalisation - Imagine that, a crystal structure of a protein complex!! If this approach works, we'll have a platform for experiementing with the assembly of non-native stociomentries (4-,6- fold symmetry) and chimeras of different species
+                        <p>Finally, an artificially assembled and stabilized T3SS needle tip complex could be a potentially useful vaccine candidate for a wide range of problematic pathogens that as a truer form than needle tip proteins alone, should provide more accurate training material for the immune system.</p>
+                        
+          
+                    </div> 
+                    <br>
+                </div>
+             </div>          
+                
                 <div class="row">
                     <div class="col-lg-12">
                         <h4 id="matsnmets" style="padding-top:75px">Materials and Methods</h4>
@@ -218,7 +262,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <h6 id="exp1" style="padding-top:75px">MONOMER TEMPLATE HYBRIDISATION ASSAY (1 BINDING SITE)</h6>
+                        <h6 id="exp1" style="padding-top:20px">MONOMER TEMPLATE HYBRIDISATION ASSAY (1 BINDING SITE)</h6>
                             <p>AIM: To determine the optimal conditions for annealing 10bp NTA DNA strands to a 50bp linear DNA template, and determine the kon, koff and dissociation constant of the reaction.</p>
                             <p>
                             <ol>
@@ -263,7 +307,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <h6 id="exp2" style="padding-top:75px">PRE-ANNEALED TEMPLATE HYBRIDISATION ASSAYs (1 binding site)</h6>   
+                        <h6 id="exp2" style="padding-top:20px">PRE-ANNEALED TEMPLATE HYBRIDISATION ASSAYs (1 binding site)</h6>   
                             <p>AIM: To determine the rate of dissociation (koff) of 10bp and 20bp NTA DNA strands from a 50bp linear DNA template after pre-annealing.</p>
                             <p>
                             <ol>
@@ -276,7 +320,7 @@
                                             <li>Seventy 1 minute cycles decreasing by 1°C (95°C to 25°C)</li>
                                             <li>One 10 minute cycle at 25°C (room temperature)</li>
                                         </ul>
-                                    <p><img src="images/kinetics_table2.2.PNG.PNG"></p>
+                                    <p><img src="images/kinetics_table2.2.PNG"></p>
                                 </li>
                                 <li>
                                     <p>TESTING OF PRE-ANNEALED DNA SAMPLES</p>
@@ -294,7 +338,7 @@
                 </div>                        
                 <div class="row">
                     <div class="col-lg-12">
-                        <h6 id="exp3" style="padding-top:75px">PROTEIN TO PRE-ANNEALED TRIMER TEMPLATE BINDING ASSAY (1 BINDING SITE)</h6>
+                        <h6 id="exp3" style="padding-top:20px">PROTEIN TO PRE-ANNEALED TRIMER TEMPLATE BINDING ASSAY (1 BINDING SITE)</h6>
                             <p>AIM: To determine the kon, koff and dissociation constant of the nickel-histidine interaction between a single histidine-tagged LcrV tip protein and the pre-annealed 20bp Ni-NTA DNA strand to trimer template.</p>
                             <p>
                             <ol>
@@ -326,7 +370,7 @@
                 </div>                       
                  <div class="row">
                     <div class="col-lg-12">
-                        <h6 id="exp4" style="padding-top:75px">PROTEIN TO PRE-ANNEALED RACQUET TEMPLATE BINDING ASSAY (5 BINDING SITES)</h6>
+                        <h6 id="exp4" style="padding-top:20px">PROTEIN TO PRE-ANNEALED RACQUET TEMPLATE BINDING ASSAY (5 BINDING SITES)</h6>
                             <p>AIM: To determine the kon, koff and dissociation constant of five LcrV tip protein to pre-annealed 10bp Ni-NTA DNA strands on racquet template.</p>
                             <p>
                             <ol>
@@ -367,7 +411,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <h5 id="supps" style="padding-top:75px">Supplementary data</h5>
+                        <h4 id="supps" style="padding-top:75px">Supplementary data</h4>
                             <p><a href="images/SUPPLEMENTARYDATA.pdf">SUPP.DATA.PDF</a></p>
                     </div>            
                 </div>
